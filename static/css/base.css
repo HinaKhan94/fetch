@@ -3,11 +3,23 @@ html {
 }
 
 body {
-    background: url('/media/hero-image.jpg') no-repeat center center fixed;
+    background: url('/media/hero-') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+}
+/* Hero Carousel */
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+
+}
+
+.c-item {
+    height: 680px;
+
 }
 
 /* from Bulma */
