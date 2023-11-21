@@ -7,16 +7,44 @@ body {
     font-family: 'Lato';
 }
 /* Hero Carousel */
-.hero-container {
+.c-item {
     height: 680px;
-    background: url('/media/hero-image.jpg') no-repeat center center fixed;
-    background-size: cover;
+}
+
+.c-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 
 }
 
-.c-item {
-    height: 680px;
+/*-------About us section------*/
+.wrapper {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
 
+.about-h1 {
+	text-align: center;
+	padding: 10px;
+}
+
+.about-h3 {
+	margin-top: 15px;
+}
+
+.about-icon {
+	font-size: 300%;
+}
+
+.about-us {
+	padding: 34px;
+	width: 400px;
+	height: 400px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+    border: #000;
 }
 
 /* from Bulma */
