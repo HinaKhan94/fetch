@@ -10,29 +10,8 @@
 {% endblock %}
 
 {% block content %}
-<!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">  
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-      <div class="carousel-item active c-item">
-        <img src="/media/hero-image.jpg" alt="Los Angeles" class="d-block w-100 c-img">
-      </div>
-      <div class="carousel-item c-item">
-        <img src="/media/hero-img.jpg" alt="Chicago" class="d-block w-100 c-img">
-      </div>
-      <div class="carousel-item">
-        <img src="ny.jpg" alt="New York" class="d-block w-100">
-      </div>
-    </div>
-  
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
+<!---Hero Section-->
+<section class="hero-container">
     <div class="container">
         <div class="row">
             <div class="col-7 col-md-6 my-auto">
@@ -47,4 +26,75 @@
             </div>
         </div>
     </div>
+</section>
+<!---About Us Section-->
+<div class="container text-center">
+  <H2>Welcome to Fetch!</H2>
+  <p>At Fetch, we believe that every pet deserves the best. Step into a world where tails wag, 
+    and purrs resonate – a haven crafted exclusively for your furry companions. 
+    Our online pet store is not just a marketplace; 
+    it's a celebration of the unconditional love and joy that pets bring into our lives.</p>
+  <div class="row align-items-center best-seller">
+    <div class="col">
+      <h3>Discover Tail-Wagging Treasures:</h3>
+      <p> Browse through our curated collection of premium pet products, from nutritious treats and cozy beds to stylish accessories that reflect your pet's unique personality. 
+        We handpick every item with the utmost care to ensure your pets receive nothing but the finest.</p>
+    </div>
+    <div class="col text-center">
+      <h3>Simple, Secure, and Tailored for You:</h3>
+      <p>Experience hassle-free shopping with our user-friendly interface. Our secure checkout ensures that your pet's goodies reach you promptly. With personalized 
+        recommendations and exclusive deals, we make sure you and your pet receive the VIP treatment you deserve.</p>
+      
+    </div>
+    <div class="col text-center">
+      <h3>Nationwide Delivery, Worldwide Love:</h3>
+      <p>Whether you're in the heart of the city or nestled in the countryside, Fetch delivers happiness to your doorstep. We also ship worldwide, 
+        spreading the love and joy of pet companionship to every corner of the globe.</p>
+    </div>
+  </div>
+</div>
+<!---FAQs Section-->
+<section id="faq" class="py-md-5">
+  <h2 class="my-5 text-center">FAQ</h2>
+
+  <div class="accordion w-75 mx-auto" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          How safe are our products?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          How long does a normal delivery take?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
 {% endblock %}
