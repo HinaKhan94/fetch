@@ -62,6 +62,11 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
+/*-------All products page------*/
+.product-h1 {
+    margin-top: 3rem!important;
+}
+
 
 .logo-font {
     text-transform: uppercase;
@@ -102,6 +107,16 @@ body {
 
 .bg-black {
     background: #30241f !important;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
 /* -------------------------------- Media Queries */
