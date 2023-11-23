@@ -127,6 +127,10 @@ body {
     padding: 15px;
 }
 
+a.category-badge > span.badge:hover {
+    background: #30241f !important;
+    color: #fff !important;
+}
 
 /*----- Footer -----*/
 .footer-container {
