@@ -16,11 +16,11 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dog
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Chicken &amp; Turkey</a>
-                <a href="" class="dropdown-item">Beef</a>
-                <a href="" class="dropdown-item">Snacks</a>
-                <a href="" class="dropdown-item">All Products</a>
+            <div class="dropdown-menu border-0" aria-labelledby="dog-link">
+                <a href="{% url 'products' %}?category=chicken_turkey" class="dropdown-item">Chicken &amp; Turkey</a>
+                <a href="{% url 'products' %}?category=beef" class="dropdown-item">Beef</a>
+                <a href="{% url 'products' %}?category=dog_snacks" class="dropdown-item">Snacks</a>
+                <a href="{% url 'products' %}?category=chicken_turkey,beef,dog_snacks" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -28,11 +28,11 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Cat
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Chicken &amp; Turkey</a>
-                <a href="" class="dropdown-item">Fish &amp; Beef</a>
-                <a href="" class="dropdown-item">Snacks</a>
-                <a href="" class="dropdown-item">All Products</a>
+            <div class="dropdown-menu border-0" aria-labelledby="cat-link">
+                <a href="{% url 'products' %}?category=cat_chicken_turkey" class="dropdown-item">Chicken &amp; Turkey</a>
+                <a href="{% url 'products' %}?category=beef_fish" class="dropdown-item">Fish &amp; Beef</a>
+                <a href="{% url 'products' %}?category=cat_snacks" class="dropdown-item">Snacks</a>
+                <a href="{% url 'products' %}?category=cat_chicken_turkey,beef_fish,cat_snacks" class="dropdown-item">All Products</a>
             </div>
         </li>
 

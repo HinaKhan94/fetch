@@ -118,6 +118,26 @@ body {
 	background: white;
 	z-index: -1;
 }
+.img-fluid {
+    max-width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border: solid;
+    border-color: #30241f;
+    padding: 15px;
+}
+
+
+/*----- Footer -----*/
+.footer-container {
+    background-color: #30241f;
+    color: white;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: white;
+}
 
 /* -------------------------------- Media Queries */
 
