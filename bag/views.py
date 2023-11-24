@@ -41,10 +41,16 @@ def adjust_bag(request, item_id):
 
 
 def remove_from_bag(request, item_id):
-    """ Add a """
+    """Remove the item from the shopping bag"""
 
-    bag = request.session.get('bag', {})
-    bag.pop[item_id]
+    try:
+        bag = request.session.get('bag', {})
 
-    request.session['bag'] = bag
-    return HttpResponse(status=200)
+        if item_id in bag:
+            del bag[item_id]
+        
+        request.session['bag'] = bag
+        return HttpResponse(status=200)
+
+    except Exception as e:
+        return HttpResponse(status=500)
