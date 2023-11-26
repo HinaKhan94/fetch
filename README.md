@@ -1,10 +1,8 @@
 # Fetch! Pet Store
 
 ![last update](https://img.shields.io/badge/Last_update:-25.11.2023-9d3f3f)
-
 ![deployment](https://img.shields.io/static/v1?label=deployed&message=Yes&color=success&style=plastic)
-![deployment platform](https://img.shields.io/static/v1?label=plateform&message=Heroku&color=634987&style=plastic)
-![coverage](https://img.shields.io/static/v1?label=coverage&message=0%&color=success&style=plastic)
+![deployment platform](https://img.shields.io/static/v1?label=platform&message=Heroku&color=634987&style=plastic)
 
 ![responsive-mockup](github_asset)
 
@@ -33,7 +31,8 @@ Live website link: [Fetch!](https://)
 # Introduction
 <img alt="logo" src="" width="300px">
 
- Welcome to Fetch! an onlin pet store, where a user can buy their pet's favorite food according to different categories. The website combines a user-friendly interface with a robust set of features to create a hassle free buying experience.
+ Welcome to Fetch! an online pet store, with a wide range of products, from gourmet treats and premium pet food. Whether you're a proud cat parent, a devoted dog lover, at Fetch; a user can buy their pet's favorite food according to different categories. The website combines a user-friendly interface with a robust set of features to create a hassle free buying experience.
+
 ### Objectives
 
 - To offer an easy/hassle free buying online experience.

@@ -18,6 +18,54 @@ body {
 
 }
 
+/*-------Breadcrumbs------*/
+.breadcrumbs {
+	padding: 10px 0;
+}
+
+.breadcrumbs h2 {
+	font-size: 26px;
+	font-weight: 300;
+}
+
+.breadcrumbs ol {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+}
+
+.breadcrumbs ol li+li {
+	padding-left: 10px;
+}
+
+.breadcrumbs ol li a {
+	color: #A2310B;
+}
+
+.breadcrumbs ol li+li::before {
+	display: inline-block;
+	padding-right: 10px;
+	color: #212529;
+	content: "/";
+}
+
+@media (max-width: 768px) {
+	.breadcrumbs .d-flex {
+		display: block !important;
+	}
+
+	.breadcrumbs ol {
+		display: block;
+	}
+
+	.breadcrumbs ol li {
+		display: inline-block;
+	}
+}
+
 /*-------About us section------*/
 .wrapper {
 	display: flex;
