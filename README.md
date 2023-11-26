@@ -1,4 +1,10 @@
-# PP5 Project Porfolio
+# Fetch! Pet Store
+
+![last update](https://img.shields.io/badge/Last_update:-25.11.2023-9d3f3f)
+
+![deployment](https://img.shields.io/static/v1?label=deployed&message=Yes&color=success&style=plastic)
+![deployment platform](https://img.shields.io/static/v1?label=plateform&message=Heroku&color=634987&style=plastic)
+![coverage](https://img.shields.io/static/v1?label=coverage&message=0%&color=success&style=plastic)
 
 ![responsive-mockup](github_asset)
 
@@ -6,7 +12,23 @@
 
 Live website link: [Fetch!](https://)
 
+-- built with --
+<p style="background-color: white; padding: 5px; display: inline-block; margin: 0 auto;">
 
+<img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="html5" width="40" height="40"/>
+<img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="css3" width="40" height="40"/>
+<img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="javascript" width="40" height="40"/>
+<img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg" alt="bootstrap" width="40" height="40"/>
+<img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="python" width="40" height="40"/>
+<img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" alt="postgresql" width="40" height="40"/>
+<img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/>
+<img src="https://www.vectorlogo.zone/logos/markdown-here/markdown-here-icon.svg" alt="markdown" width="40" height="40"/>
+
+</p>
+
+</div>
+
+---
 
 # Introduction
 <img alt="logo" src="" width="300px">
@@ -20,6 +42,8 @@ Live website link: [Fetch!](https://)
 
 - To deliver a secure and feature-rich admin panel that enables efficient management of product listings, user accounts, and available checkouts.
 
+- From brand's side: to have an online presence.
+
 
 ### Target Audience
 
@@ -31,3 +55,17 @@ Live website link: [Fetch!](https://)
 
 
 ### Problem Being Solved
+
+What problem will the business solve?
+What will the business provide to solve that problem?
+How will the business make money?
+Who will purchase our products or services?
+How will our target customers learn about our business?
+What will the business do better than the competitors?
+How much money do you
+
+- need to start?
+- spend every month?
+- earn every month?
+
+How much money do you need to start and operate the business?
