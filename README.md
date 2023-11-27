@@ -77,6 +77,14 @@ Live website link: [Fetch!](https://)
 7. How much money do you need to start and operate the business?
 - The money to buy and host a domain to make it available for everyone.
 
+### Scope
+
+Fetch aims to provide a trustworthy experience for pet owners interested in buying online pet food. The website offers key functionalities including:
+
+- A robust checkout system that displays checkout information and allows for easy checkout.
+- A detailed products page that displays product quantity, price and description.
+- An advanced filtering system on the 'Products' page to help users find products that fit the criteria.
+- User registeration that allows users to keep track of purchases, wishlist, and reviews.
 
 ## 📜Table of Contents
 
@@ -110,3 +118,46 @@ Live website link: [Fetch!](https://)
 8. [🤖Technologies Used](#🤖technologies-used)
 9. [⚙️Setup and Installation (GitHub and Heroku)](#⚙️setup-and-installation-github-and-heroku)
 10. [🎓Credits & Acknowledgements](#🎓credits--acknowledgements)
+
+# 📈Business and Marketing Plan
+
+### Introduction
+
+Fetch is a B2C e-commerce platform for pet owners and animal lovers.
+
+### Target Market
+
+The target market could be:
+
+- Animal Lovers: People with love for animals, even though they do not own a pet but still ready to help out animal shelters by provinding pet food from Fetch.
+- Pet Owners: People who own pets.
+
+### Revenue Model
+
+1. **Commission-Based:** A percentage of each sale goes to Fetch.
+
+
+### Marketing Strategies
+
+*Online Marketing*
+
+1. **SEO:** Focused keyword targeting to rank higher on search engines.
+2. **Social Media:** Leverage platforms like Facebook and Instagram, where content can be highly engaging.
+
+<details><summary><b>Facebook Screenshots</b></summary>
+![Facebook-page](github_assets/readme)
+![Facebook-post1](github_assets/readme)
+![Facebook-post2](github_assets/readme)
+</details>
+
+### Key Performance Indicators (KPIs)
+
+1. **User Engagement:** Measured through metrics like session duration, page views, and bounce rate.
+2. **Conversion Rate:** The percentage of website visits that turn into confirmed checkout.
+3. **Customer Retention:** Measured through repeated purchases and reviews.
+
+### Risks and Mitigation Strategies
+
+1. **Products Expansion:** In order to stay ahead or atleast in line with competitors, Fetch will keep adding more products apart from food but also premium bedding for pets.
+2. **Category Expansion:** From just having dogs and cats products on the website, Fetch will inlcude Fish and birds into its catalog.
+
