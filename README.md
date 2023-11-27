@@ -55,16 +55,58 @@ Live website link: [Fetch!](https://)
 
 ### Problem Being Solved
 
-What problem will the business solve?
-What will the business provide to solve that problem?
-How will the business make money?
-Who will purchase our products or services?
-How will our target customers learn about our business?
-What will the business do better than the competitors?
-How much money do you
+1. What problem will the business solve?
+- Instore shopping can be a real problem for people with busy schedules and when you have a pet at home to take care of, it can be really tiring for people with hectic routines to manage to take out time to go to the store and buy their pet's essentials.
 
-- need to start?
-- spend every month?
-- earn every month?
+2. What will the business provide to solve that problem?
+-  Fetch will allow the ease of buying your pet's essential food by just going online from anywhere instead of going to the store yourself. It will help buyers with the ease of shopping.
 
-How much money do you need to start and operate the business?
+3. How will the business make money?
+- The business model is fairly simple, It will go into partnerships with different vendors provinding dog food. A 5% commision will go to Fetch for each sale made through the website.
+
+4. Who will purchase our products or services?
+- As mentioned above, the target audiences are pet onwers, animal lovers and gift givers.
+
+5. How will our target customers learn about our business?
+- Through social media (Facebook, Instagram)
+
+6. What will the business do better than the competitors?
+- Brand Image, Fetch is not just an ecommerce store but a community for dog and cat lovers to come and share their reviews on the products they have used so others make an informed decision.
+
+
+7. How much money do you need to start and operate the business?
+- The money to buy and host a domain to make it available for everyone.
+
+
+## 📜Table of Contents
+
+1. [Introduction](#introduction)
+    - [Objectives](#objectives)
+    - [Target Audience](#target-audience)
+    - [Problem Being Solved](#problem-being-solved)
+    - [Scope](#scope)
+2. [📈Business and Marketing Plan](#📈business-and-marketing-plan)
+    - [Introduction](#introduction-1)
+    - [Target Market](#target-market)
+    - [Revenue Model](#revenue-model)
+    - [Marketing Strategies](#marketing-strategies)
+    - [Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
+    - [Risks and Mitigation Strategies](#risks-and-mitigation-strategies)
+3. [🧑‍💻Development Plan](#🧑‍💻development-plan)
+    - [Introduction](#introduction-1)
+    - [Research and Initial Decisions](#research-and-initial-decisions)
+    - [Point System and Estimation](#point-system-and-estimation)
+    - [Timeline and Milestones](#timeline-and-milestones)
+    - [Methodologies](#methodologies)
+4. [🖌️UX/UI Design Plan](#🖌️uxui-design-plan)
+    - [The Strategy Plane](#the-strategy-plane)
+    - [The Scope Plane](#the-scope-plane)
+    - [The Structure Plane](#the-structure-plane)
+    - [The Skeleton Plane](#the-skeleton-plane)
+    - [The Surface Plane](#the-surface-plane)
+5. [⭐Features](#⭐features)
+6. [🌠Future Enhancements](#🌠future-enhancements)
+7. [🧮Testing](#🧮testing)
+8. [🤖Technologies Used](#🤖technologies-used)
+9. [⚙️Setup and Installation (GitHub and Heroku)](#⚙️setup-and-installation-github-and-heroku)
+10. [🎓Credits & Acknowledgements](#🎓credits--acknowledgements)
