@@ -1,8 +1,12 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from django.db.models import Avg
+from django.http import HttpResponse
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
+from django.contrib.auth.models import User
 from .forms import ProductForm, ReviewForm
 
 # Create your views here.
@@ -94,6 +98,68 @@ def add_product(request):
     template = 'products/add_product.html'
     context = {
         'form': form,
+    }
+
+    return render(request, template, context)
+
+@login_required()
+def add_review(request, product_id):
+    """
+    Renders form to add review.
+    Logged in Users Only (redirects to log in).
+    Adds new review to database.
+    """
+
+    # Sets product based on product_id
+    product = get_object_or_404(Product, pk=product_id)
+
+    # Sets author based on current user
+    author = User.objects.get(username=request.user)
+
+    # Handles Form Submission
+    if request.method == "POST":
+        form = ReviewForm(request.POST)
+
+        if form.is_valid():
+            review = form.save()
+            review.product = product
+            review.user = author
+            review.save()
+
+            # Updates product rating on product object
+            if product.reviews.filter(is_approved=True).count() > 0:
+                product.rating = round(
+                    product.reviews.filter(is_approved=True).aggregate(
+                        Avg('rating'))['rating__avg'])
+            else:
+                product.rating = 0
+            product.save()
+
+            request.session['show_bag_summary'] = False
+            messages.success(
+                request,
+                "Your review has been created. " +
+                "It will appear on the site once it has been approved. " +
+                "You can see your review on your profile page until then. " +
+                "We value your feedback and only " +
+                "reject reviews with inappropriate content."
+            )
+
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, "Form invalid, please try again.")
+
+    # Handles View Rendering
+    else:
+        form = ReviewForm()
+
+    # Sets page template
+    template = 'products/reviews/add_review.html'
+
+    # Sets current product & form content
+    context = {
+        'form': form,
+        'product': product,
     }
 
     return render(request, template, context)
