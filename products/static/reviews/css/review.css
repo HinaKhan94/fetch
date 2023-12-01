@@ -8,6 +8,10 @@
 
 .review-container {
     border-radius: 2px;
+    border: solid;
+    border-color: #30241f;
+    background-color: #30241f;
+    color: white;
 }
 
 .review-title {
@@ -15,6 +19,9 @@
     line-height: 0.8;
 }
 
+.review-content {
+    padding: 10px;
+}
 /* Add Review Page */
 
 .ib-form {

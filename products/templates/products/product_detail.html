@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'reviews/css/review.css' %}">
+{% endblock %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -130,26 +133,13 @@
                 <div class="col-12 col-lg-10 offset-lg-1 bg-ib-white mb-3 pt-3 pb-3 review-container">
                     <div class="row font-body text-dark-grey review-header mb-2">
                         <div class="col-12 col-sm-9 d-block d-md-flex flex-wrap align-items-end mb-1 mb-md-0">
-                            <h3 class="review-title weight-semibold d-block d-lg-inline mb-1 mb-md-0 me-md-3">{{ review.content }}</h3>
-                            <div class="d-inline-flex">
-                                <div class="review-user-div text-blue me-2 d-flex align-items-end ib-lh-1">
-                                    <div class="category-icon-circle-sm bg-blue me-1">
-                                        <i class="fas fa-user text-ib-light text-center"></i>
-                                    </div>
-                                    <p class="d-inline me-2">{% if review.user != None %}{{ review.user }}{% else %}Anonymous{% endif %}</p>
-                                </div>
-                                <p class="d-inline weight-light review-date m-0 ib-lh-1">{{ review.created_on|date:"d/m/Y" }}</p>
-                            </div>
+                            <h3 class="review-title weight-semibold d-block d-lg-inline mb-1 mb-md-0 me-md-3"><i class="fas fa-user text-ib-light text-center"></i>  {{ review.user }}</h3>
                         </div>
                         <div class="col-12 col-sm-3 text-start text-sm-end">
-
-                            <!-- Review Rating -->
-                            <div class="rating-div review-rating ib-lh-1 pe-0">
-                                <span class="ib-lh-1 rating-hex-small rating-hex-{% if review.rating >= 1 %}true{% else %}false{% endif %}">&#x2B22;</span>
-                                <span class="ib-lh-1 rating-hex-small rating-hex-{% if review.rating >= 2 %}true{% else %}false{% endif %}">&#x2B22;</span>
-                                <span class="ib-lh-1 rating-hex-small rating-hex-{% if review.rating >= 3 %}true{% else %}false{% endif %}">&#x2B22;</span>
-                                <span class="ib-lh-1 rating-hex-small rating-hex-{% if review.rating >= 4 %}true{% else %}false{% endif %}">&#x2B22;</span>
-                                <span class="ib-lh-1 rating-hex-small rating-hex-{% if review.rating >= 5 %}true{% else %}false{% endif %}">&#x2B22;</span>
+                            <div class="d-inline-flex">
+                                <div class="review-user-div text-blue me-2 d-flex align-items-end ib-lh-1">
+                                    <p class="d-inline me-2"> reviewed on: {{ review.created_on|date:"d/m/Y" }} </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -159,16 +149,16 @@
 
                     <!-- Review EDIT / DELETE Buttons -->
                     {% if request.user.is_superuser or request.user == review.user %}
-                        <div class="row">
+                        <div class="row review-content">
                             <div class="mt-2 gy-3">
 
                                 {% if request.user == review.user %}
                                     <!-- Edit Review - Review Author Only -->
-                                    <a href="{% url 'edit_review' review.id %}" class="edit-del-btn edit-btn font-title text-decoration-none weight-bold align-middle me-2">EDIT</a>
+                                    <a href="{% url 'edit_review' review.id %}" class="btn btn-outline-black rounded-0 mt-5 text-decoration-none text-uppercase shadow-sm">EDIT</a>
                                 {% endif %}
 
                                 <!-- Delete Review - Review Author or Superuser Only -->
-                                <button type="button" data-toggle="modal" data-target="#modal-{{ review.id }}" class="edit-del-btn del-btn font-title text-decoration-none weight-bold align-middle">DELETE</button>
+                                <button type="button" data-toggle="modal" data-target="#modal-{{ review.id }}" class="btn btn-black rounded-0 mt-5 text-decoration-none text-uppercase shadow-sm">DELETE</button>
                             </div>
                         </div>
 
@@ -188,7 +178,7 @@
                                     </div>
                                     <div class="modal-footer pt-0">
                                         <button type="button" class="edit-del-btn dismiss-btn font-title text-decoration-none weight-regular align-middle me-2" data-dismiss="modal">CLOSE</button>
-                                        <a href="" class="edit-del-btn del-btn font-title text-decoration-none weight-bold align-middle">DELETE</a>
+                                        <a href="{% url 'delete_review' review.id %}?next={{ request.path|urlencode }}" class="edit-del-btn del-btn font-title text-decoration-none weight-bold align-middle">DELETE</a>
                                     </div>
                                 </div>
                             </div>

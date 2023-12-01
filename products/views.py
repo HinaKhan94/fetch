@@ -230,4 +230,38 @@ def edit_review(request, review_id):
     return render(request, template, context)
 
 
+@login_required
+def delete_review(request, review_id):
+    """ Deletes a review """
+
+    review = get_object_or_404(Review, pk=review_id)
+    product = Product.objects.filter(reviews=review)[0]
+
+    # Gets the previous page URL for redirect
+    next = request.GET.get('next', '')
+
+    # Checks user is author of review or superuser
+    # redirects to product detail if not
+    if not request.user.is_superuser:
+        if request.user != review.user:
+            messages.error(request, 'You can only delete your own reviews.')
+            return redirect(reverse('product_detail', args=[product.id]))
+
+    review = get_object_or_404(Review, pk=review_id)
+    review.delete()
+
+    # Updates product rating on product object
+    if product.reviews.filter(is_approved=True).count() > 0:
+        product.rating = round(
+            product.reviews.filter(
+                is_approved=True).aggregate(Avg('rating'))['rating__avg'])
+    else:
+        product.rating = 0
+    product.save()
+
+    request.session['show_bag_summary'] = False
+    messages.success(request, 'Review successfully deleted!')
+    return redirect(next)
+
+
 
