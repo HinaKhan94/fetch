@@ -19,3 +19,14 @@
 #id_default_country option:first-child {
     color: #aab7c4;
 }
+
+.navbar-profile {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*my reviews section */
+.review-details-card {
+	padding: 20px;
+}

@@ -5,6 +5,7 @@ from .models import UserProfile
 from .forms import UserProfileForm
 
 from checkout.models import Order
+from products.models import Review
 
 def profile(request):
     """ Display the user's profile. """
@@ -45,4 +46,15 @@ def order_history(request, order_number):
         'from_profile': True,
     }
 
+    return render(request, template, context)
+
+def my_reviews(request):
+    user_reviews_approved = Review.objects.filter(user=request.user, is_approved=True)
+    user_reviews_pending = Review.objects.filter(user=request.user, is_approved=False)
+
+    template = 'profiles/my_reviews.html'
+    context = {
+        'user_reviews_approved': user_reviews_approved,
+        'user_reviews_pending': user_reviews_pending,
+    }
     return render(request, template, context)

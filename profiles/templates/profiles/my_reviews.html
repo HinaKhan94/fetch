@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <h2>My Reviews</h2>
+    <div class="row">
+      {% for review in user_reviews_approved %}
+        <div class="col-md-10 mx-auto mt-md-3 mt-lg-4 mt-4">
+            <div class="container review-details-card card shadow my-2">
+                <!-- Displays relevant information about the request here -->
+                <h5 class="card-title">{{ review.product.name }}</h5>
+                <p><strong>{{ review.content }}</strong></p>
+                <p>You rated: {{ review.rating }}/5</p>
+                <p class="card-text">
+                    {% if review.is_approved %}
+                        <span class="badge bg-success">Approved</span>
+                    {% else %}
+                        <span class="badge bg-warning text-dark">Pending</span>
+                    {% endif %}
+                </p>
+                <p class="card-text">
+                    {% if request.user.is_superuser or request.user == review.user %}
+                    <div class="row review-content">
+                        <div class="mt-2 gy-3">
+                            {% if request.user == review.user %}
+                                <!-- Edit Review - Review Author Only -->
+                                <a href="{% url 'edit_review' review.id %}" class="btn btn-outline-black rounded-0 mt-5 text-decoration-none text-uppercase shadow-sm">EDIT</a>
+                            {% endif %}
+                            <!-- Delete Review - Review Author or Superuser Only -->
+                            <button type="button" data-toggle="modal" data-target="#modal-{{ review.id }}" class="btn btn-black rounded-0 mt-5 text-decoration-none text-uppercase shadow-sm">DELETE</button>
+                        </div>
+                    </div>
+
+                    <!-- Confirm Delete Modal - Defensive Programming -->
+                    <div class="modal fade" id="modal-{{ review.id }}" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-between bg-dark-grey py-3">
+                                    <h2 class="font-body text-ib-light">DELETE REVIEW</h2>
+                                    <button type="button" class="close modal-close-cross text-ib-light" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" class="ib-lh-1">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body pb-2 font-body">
+                                    <p>Are you sure you want to the delete the review...
+                                    <strong>"{{ review.content }}"</strong></p>
+                                </div>
+                                <div class="modal-footer pt-0">
+                                    <button type="button" class="edit-del-btn dismiss-btn font-title text-decoration-none weight-regular align-middle me-2" data-dismiss="modal">CLOSE</button>
+                                    <a href="{% url 'delete_review' review.id %}?next={{ request.path|urlencode }}" class="edit-del-btn del-btn font-title text-decoration-none weight-bold align-middle">DELETE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    {% endif %}  
+                </p>
+            </div>
+        </div>
+      {% endfor %}
+    </div>
+</div>
+{% endblock %}
