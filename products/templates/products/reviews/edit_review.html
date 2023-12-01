@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'reviews/css/review.css' %}">
+{% endblock %}
 
-{% block extra_title %}- Edit Review: {{review.title}} for {{product.name}}{% endblock %}
+{% block extra_title %}- Edit Review:for {{product.name}}{% endblock %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -35,28 +38,14 @@
             <!-- Review Form -->
             <form class="px-3 px-md-4 py-4 form-as-p" method="POST" action="{% url 'edit_review' review.id %}" enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ form.as_p }}
-    
-                <!-- Rating Select - populates hidden rating input using JS -->
-                <div class="rating-form-div" aria-hidden="true">
-                    <p class="font-body weight-semibold m-0">Your Rating *</p>
-                    <div class="rating-div pe-0">
-                        <span class="ib-lh-1 rating-hex hex-1 {% if review.rating >= 1 %}rating-hex-selected{% endif %}" data-hex="1">&#x2B22;</span>
-                        <span class="ib-lh-1 rating-hex hex-2 {% if review.rating >= 2 %}rating-hex-selected{% endif %}" data-hex="2">&#x2B22;</span>
-                        <span class="ib-lh-1 rating-hex hex-3 {% if review.rating >= 3 %}rating-hex-selected{% endif %}" data-hex="3">&#x2B22;</span>
-                        <span class="ib-lh-1 rating-hex hex-4 {% if review.rating >= 4 %}rating-hex-selected{% endif %}" data-hex="4">&#x2B22;</span>
-                        <span class="ib-lh-1 rating-hex hex-5 {% if review.rating >= 5 %}rating-hex-selected{% endif %}" data-hex="5">&#x2B22;</span>
-                    </div>
-                </div>
-
-                <!-- Hidden input to redirect user back to previous page once submitted -->
-                <input type="hidden" name="redirect_url" value="{{ request.GET.next }}">
+                {{ form.content }}
+                {{ form.rating }}
     
                 <!-- Buttons -->
                 <div class="d-flex justify-content-center justify-content-sm-end mt-5">
 
                     <!-- Cancel Button -->
-                    <a class="ib-button ib-button-grey me-3 text-decoration-none text-dark-grey font-title weight-bold shadow-sm" href="{{ request.GET.next }}">CANCEL</a>
+                    <a class="ib-button ib-button-grey me-3 text-decoration-none text-dark-grey font-title weight-bold shadow-sm" href="{% url 'product_detail' product.id %}">CANCEL</a>
                     
                     <!-- Submit Button -->
                     <button class="ib-button ib-button-yellow text-dark-grey font-title weight-bold shadow-sm" type="submit">UPDATE</button>

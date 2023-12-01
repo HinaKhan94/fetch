@@ -41,19 +41,3 @@
 .review-form .ib-form-header img {
     width: 150px;
 }
-/*
-.rating-hex {
-    font-size: 46px;
-    margin-right: 5px;
-    color: var(--hex-grey);
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-}
-
-.rating-hex-selected {
-    color: var(--hex-yellow);
-}
-*/

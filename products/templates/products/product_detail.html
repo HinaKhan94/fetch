@@ -164,7 +164,7 @@
 
                                 {% if request.user == review.user %}
                                     <!-- Edit Review - Review Author Only -->
-                                    <a href="" class="edit-del-btn edit-btn font-title text-decoration-none weight-bold align-middle me-2">EDIT</a>
+                                    <a href="{% url 'edit_review' review.id %}" class="edit-del-btn edit-btn font-title text-decoration-none weight-bold align-middle me-2">EDIT</a>
                                 {% endif %}
 
                                 <!-- Delete Review - Review Author or Superuser Only -->

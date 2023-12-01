@@ -5,7 +5,7 @@ from django.db.models import Avg
 from django.http import HttpResponse
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
+from .models import Product, Category, Review
 from django.contrib.auth.models import User
 from .forms import ProductForm, ReviewForm
 
@@ -163,3 +163,71 @@ def add_review(request, product_id):
     }
 
     return render(request, template, context)
+
+
+@login_required()
+def edit_review(request, review_id):
+    """
+    View to edit user reviews.
+    only logged in Users can edit.
+    also updates the review in database.
+    """
+
+    review = get_object_or_404(Review, pk=review_id)
+    product = Product.objects.filter(reviews=review)[0]
+
+    # Checks if user is the author
+    # redirects to product detail if not
+    if request.user != review.user:
+        messages.error(request, 'You can only edit your own reviews.')
+        return redirect(reverse('product_detail', args=[product.id]))
+
+    # Handles Form Submission
+    if request.method == "POST":
+        form = ReviewForm(request.POST, request.FILES, instance=review)
+
+        if form.is_valid():
+            review = form.save()
+            review.is_approved = False
+            review.save()
+
+            # Updates product rating on product object
+            if product.reviews.filter(is_approved=True).count() > 0:
+                product.rating = round(
+                    product.reviews.filter(
+                        is_approved=True).aggregate(
+                            Avg('rating'))['rating__avg'])
+            else:
+                product.rating = 0
+            product.save()
+
+            request.session['show_bag_summary'] = False
+            messages.success(
+                request,
+                "Your review has been updated. " +
+                "It will appear on the site once it has been approved. " +
+                "We value your feedback and only! "
+            )
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, "Form invalid, please try again.")
+
+    # Handles View Rendering
+    else:
+        form = ReviewForm(instance=review)
+        messages.info(request, f'You are editing... "{review.content}"')
+
+    # Sets page template
+    template = 'products/reviews/edit_review.html'
+
+    # Sets current product & form content
+    context = {
+        'form': form,
+        'review': review,
+        'product': product,
+    }
+
+    return render(request, template, context)
+
+
+

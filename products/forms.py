@@ -1,5 +1,8 @@
 from django import forms
 from .models import Product, Category, Review
+from django.core.validators import (
+    MaxValueValidator, MinValueValidator
+)
 
 
 class ProductForm(forms.ModelForm):
@@ -22,6 +25,7 @@ class ReviewForm(forms.ModelForm):
     """
     Form for Review Model - Add / Edit
     """
+
     class Meta:
         model = Review
         fields = ('content', 'rating',)
@@ -60,7 +64,6 @@ class ReviewForm(forms.ModelForm):
             # Removes input labels
             self.fields[field].label = False
 
-        # Hidden input field for rating score
-        # Accessible to screen readers
-        self.fields['rating'].widget.attrs['class'] = (
-            'rating-field visually-hidden')
+            # Add validators to the rating field
+        self.fields['rating'].validators.append(MinValueValidator(0))
+        self.fields['rating'].validators.append(MaxValueValidator(5))
