@@ -45,3 +45,13 @@
 .review-form .ib-form-header img {
     width: 150px;
 }
+/* wishlist icon in product details page */
+
+.wishlist-icon {
+    border-color: black;
+    color: red;
+}
+
+.wishlist-icon:hover {
+    background-color: black;
+}
