@@ -8,10 +8,7 @@
 
 .review-container {
     border-radius: 2px;
-    border: solid;
-    border-color: #30241f;
-    background-color: #30241f;
-    color: white;
+    color: black;
 }
 
 .review-title {

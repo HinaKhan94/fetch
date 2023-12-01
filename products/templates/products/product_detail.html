@@ -130,7 +130,7 @@
         {% if reviews|length > 0 %}
             {% for review in reviews %}
                 <!-- Review -->
-                <div class="col-12 col-lg-10 offset-lg-1 bg-ib-white mb-3 pt-3 pb-3 review-container">
+                <div class="col-12 col-lg-10 offset-lg-1 mb-3 pt-3 pb-3 review-container shadow">
                     <div class="row font-body text-dark-grey review-header mb-2">
                         <div class="col-12 col-sm-9 d-block d-md-flex flex-wrap align-items-end mb-1 mb-md-0">
                             <h3 class="review-title weight-semibold d-block d-lg-inline mb-1 mb-md-0 me-md-3"><i class="fas fa-user text-ib-light text-center"></i>  {{ review.user }}</h3>
@@ -167,18 +167,17 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header justify-content-between bg-dark-grey py-3">
-                                        <h2 class="font-body text-ib-light">DELETE REVIEW</h2>
-                                        <button type="button" class="close modal-close-cross text-ib-light" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true" class="ib-lh-1">&times;</span>
+                                        <h2 class="font-body text-black">DELETE REVIEW</h2>
+                                        <button type="button" class="close modal-close-cross text-black" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div class="modal-body pb-2 font-body">
-                                        <p>Are you sure you want to the delete the review...
-                                        <strong>"{{ review.content }}"</strong></p>
+                                    <div class="modal-body pb-2 font-body text-black">
+                                        <p>Are you sure you want to the delete the review...<strong>{{ review.content }}</strong></p>
                                     </div>
                                     <div class="modal-footer pt-0">
-                                        <button type="button" class="edit-del-btn dismiss-btn font-title text-decoration-none weight-regular align-middle me-2" data-dismiss="modal">CLOSE</button>
-                                        <a href="{% url 'delete_review' review.id %}?next={{ request.path|urlencode }}" class="edit-del-btn del-btn font-title text-decoration-none weight-bold align-middle">DELETE</a>
+                                        <button type="button" class="btn btn-outline-black rounded-0 mt-5 text-decoration-none text-uppercase shadow-sm" data-dismiss="modal">CLOSE</button>
+                                        <a href="{% url 'delete_review' review.id %}?next={{ request.path|urlencode }}" class="btn btn-black rounded-0 mt-5 text-decoration-none text-uppercase shadow-sm">DELETE</a>
                                     </div>
                                 </div>
                             </div>
