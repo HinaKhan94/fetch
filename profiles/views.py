@@ -6,7 +6,9 @@ from .forms import UserProfileForm
 
 from checkout.models import Order
 from products.models import Review
+from django.contrib.auth.decorators import login_required
 
+@login_required
 def profile(request):
     """ Display the user's profile. """
     profile = get_object_or_404(UserProfile, user=request.user)
@@ -47,6 +49,7 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
 
 def my_reviews(request):
     user_reviews_approved = Review.objects.filter(user=request.user, is_approved=True)
