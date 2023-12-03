@@ -61,7 +61,7 @@
                     {% endif %}
                     <br>
                     <!-- Add Wishlist Option -->
-                    <form method="post" action="">
+                    <form method="post" action="{% url 'add_to_wishlist' product.id %}">
                         {% csrf_token %}
                         <button type="submit" class="btn btn-outline-primary wishlist-icon"><i class="fa-regular fa-heart fa-beat-fade"></i></button>
                     </form>

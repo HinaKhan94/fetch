@@ -1,11 +1,11 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 
-from .models import UserProfile
+from .models import UserProfile, Wishlist
 from .forms import UserProfileForm
 
 from checkout.models import Order
-from products.models import Review
+from products.models import Review, Product
 from django.contrib.auth.decorators import login_required
 
 @login_required
@@ -61,3 +61,25 @@ def my_reviews(request):
         'user_reviews_pending': user_reviews_pending,
     }
     return render(request, template, context)
+
+
+@login_required
+def wishlist_view(request):
+    user_wishlist = Wishlist.objects.filter(user=request.user.userprofile)
+    template = 'profiles/wishlist.html'
+    context = {'wishlist_items': user_wishlist}
+    return render(request, template, context)
+
+@login_required
+def add_to_wishlist(request, product_id):
+    product = Product.objects.get(pk=product_id)
+    
+    # Check if the item is already in the wishlist
+    if Wishlist.objects.filter(user=request.user.userprofile, product=product).exists():
+        messages.warning(request, f"{product.name} is already in your wishlist.")
+    else:
+        # Add the item to the wishlist
+        Wishlist.objects.create(user=request.user.userprofile, product=product)
+        messages.success(request, f"{product.name} added to your wishlist.")
+
+    return redirect('wishlist')
