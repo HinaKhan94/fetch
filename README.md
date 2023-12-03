@@ -101,10 +101,7 @@ Fetch aims to provide a trustworthy experience for pet owners interested in buyi
     - [Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
     - [Risks and Mitigation Strategies](#risks-and-mitigation-strategies)
 3. [🧑‍💻Development Plan](#🧑‍💻development-plan)
-    - [Introduction](#introduction-1)
-    - [Research and Initial Decisions](#research-and-initial-decisions)
-    - [Point System and Estimation](#point-system-and-estimation)
-    - [Timeline and Milestones](#timeline-and-milestones)
+    - [Agile Development](#agile-development)
     - [Methodologies](#methodologies)
 4. [🖌️UX/UI Design Plan](#🖌️uxui-design-plan)
     - [The Strategy Plane](#the-strategy-plane)
@@ -160,4 +157,6 @@ The target market could be:
 
 1. **Products Expansion:** In order to stay ahead or atleast in line with competitors, Fetch will keep adding more products apart from food but also premium bedding for pets.
 2. **Category Expansion:** From just having dogs and cats products on the website, Fetch will inlcude Fish and birds into its catalog.
+
+
 
