@@ -30,3 +30,18 @@
 .review-details-card {
 	padding: 20px;
 }
+
+/* Pagination */
+.page-link {
+    color: var(--dark-gray);
+}
+
+.page-link:hover {
+    color: var(--black);
+}
+
+.page-item.active .page-link {
+    color: var(--white);
+    background-color: #000;
+    border-color: #000;
+}

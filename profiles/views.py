@@ -6,6 +6,7 @@ from .forms import UserProfileForm
 
 from checkout.models import Order
 from products.models import Review, Product
+from products.utils import products_pagination
 from django.contrib.auth.decorators import login_required
 
 @login_required
@@ -65,9 +66,11 @@ def my_reviews(request):
 
 @login_required
 def wishlist_view(request):
+    """ renders wishlist page """
     user_wishlist = Wishlist.objects.filter(user=request.user.userprofile)
+    paginated_wishlist = products_pagination(request, user_wishlist, 4)
     template = 'profiles/wishlist.html'
-    context = {'wishlist_items': user_wishlist}
+    context = {'wishlist_items': paginated_wishlist}
     return render(request, template, context)
 
 @login_required
