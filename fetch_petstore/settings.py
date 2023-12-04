@@ -21,14 +21,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-9iym9zaen5d@402aqdmg3g8o=z@*6iqji(7@neh!nf85d^vxa-'
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['8000-hinakhan94-fetch-udzbd6q6vqh.ws-eu106.gitpod.io',
                  'fetch-petstore.herokuapp.com',
-                 'localhost',]
+                 'localhost',
+                 'fetch-petstore-665545f3d64c.herokuapp.com']
 
 
 # Application definition
