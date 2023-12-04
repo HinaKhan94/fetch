@@ -4,6 +4,7 @@ html {
 
 body {
     color: #555;
+    background-color: white;
     font-family: 'Lato';
 }
 /*------ Hero Carousel------- */
@@ -42,13 +43,13 @@ body {
 }
 
 .breadcrumbs ol li a {
-	color: #A2310B;
+	color: #30241f;
 }
 
 .breadcrumbs ol li+li::before {
 	display: inline-block;
 	padding-right: 10px;
-	color: #212529;
+	color: black;
 	content: "/";
 }
 
@@ -387,7 +388,6 @@ input[name='q']::placeholder {
 }
 
 .contact .info-wrap {
-	background: #fff;
 	border-radius: 4px;
 }
 
@@ -397,7 +397,6 @@ input[name='q']::placeholder {
 	float: left;
 	width: 44px;
 	height: 44px;
-	background: #f7fbfe;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -444,6 +443,10 @@ input[name='q']::placeholder {
 
 .inquiry-icon {
 	color: #30241f;
+}
+
+.form-control {
+    border-radius: 0;
 }
 
 

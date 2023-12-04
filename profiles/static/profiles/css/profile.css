@@ -7,6 +7,11 @@
     color: #000;
 }
 
+.delivery-wrapper {
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
 #profile-update-form input::placeholder {
     color: #aab7c4;
 }
@@ -24,6 +29,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+/* wishlist section */
+.wishlist-btn,
+.review-btn {
+    margin-right: 5px;
+    padding: 8px;
 }
 
 /*my reviews section */
