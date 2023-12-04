@@ -159,4 +159,134 @@ The target market could be:
 2. **Category Expansion:** From just having dogs and cats products on the website, Fetch will inlcude Fish and birds into its catalog.
 
 
+# 🧑‍💻Development Plan
 
+### Agile Development
+
+The development of this project was managed through GitHub issues, milestones, and projects.
+
+### Sprints
+
+- Sprint 1: Product, Checkout and Bag Models and user authentication -  November 19th, 2023 to November 3Oth, 2023
+
+  - Setup database models
+  - Create base.html file
+  - Import static files for layout, CSS, JS, and images
+  - Create an index.html, base.html, product and checkout templates and views
+  - Add a views for the models
+  - Install allauth and crispy-forms
+  - Add allauth templates to the workspace
+  - Link up the login, log out, and signup templates to base.html
+  - Add a userprofile model and views 
+  - Add CSS styling to authorization pages
+  - Setup a README file with a basic layout
+  - Change materialize to bootstrap styling
+  
+
+- Sprint 2: Customized views and README - November 30th, 2023 to December 3rd, 2023
+
+  - Add Marketing, development and UI/UX section to README
+  - Add Reviews, Wishlist and Messages Models 
+  - Add detailed views to wishlist, review and messages models with responsive templates 
+  - Add content to README: UX, Deployment, and Development
+  - Create a separate TESTING file with a layout
+
+- Sprint 3: Refine and customize the CSS start testing - December 4th, 2023 to December 15th, 2023
+
+  - Add Future Enhancements and Technologies information to README
+  - Add and finalize display of success-messages
+  - First Lighthouse testing
+  - Fixes based on Lighthouse testing
+  - Add functionality to add/approve reviews
+  - MVP reached
+
+- Sprint 4: Initial Set-up - December 15th, 2023 to December 20th, 2023
+
+  - Create App on Heroku
+  - Create the database in Elephantsql
+  - Create an AWS account for storage
+  - Install packages: django, dj_database, psyocpg2, etc.
+  - Update/create project files: settings.py, env.py, Procfile
+  - Migrate changes
+
+- Sprint 5: Testing, Final revisions to code and documentation - December 20th to December 25th, 2023
+
+  - HTML testing, fixing errors and warnings
+  - CSS testing
+  - Python testing, fixing warnings
+  - Delete commented code
+  - Add test results and images to TESTING.md
+  - Carry out final revisions
+  - Finalize README.md and TESTING.md
+  - Proofread code and documentation
+  - Set DEBUG to False
+  - Final deploy
+
+
+### Methodologies
+
+- Agile Development: Utilized for its emphasis on iterative development and cross-functional collaboration.
+- GitHub Kanban: Employed for efficient task management, facilitating the breakdown of milestones into epics and user stories.
+
+For the full kanban board please visit GitHub Projects for Overall Development Overview and User Stories.
+
+[Complete Kanban Overview](https://github.com)
+
+
+[⬆️Back to top](<#📜table-of-contents>)
+
+
+# 🖌️UX/UI Design Plan
+
+### The Strategy Plane
+
+#### The Site's Ideal User
+- **Target Audience**: Pet owners and animal lovers.
+- **Needs**: real-time availability and pricing transparency.
+- **Behavior**: Likely to go through different products before making the final purchase, putting the product in the wishlist for later purchase.
+
+#### Site Goals
+- **User Engagement**: To provide an intuitive and visually appealing webstore interface to purchase products.
+- **Ease of Use**: To offer a streamlined buying process with less clicks.
+- **Consistency**: To accomplish a uniform design language across all pages for a cohesive user experience.
+
+
+### The Scope Plane
+
+This plane defines the boundaries of the design project, outlining what is to be included in terms of features and functionalities.
+
+#### Core Functionalities
+
+- **User Sign In and Sign Up**: Secure and easy-to-navigate user authentication process for signing in and up.
+- **Detailed Product Page**: Comprehensive details for each product including price, description, rating, and quantity.
+- **Advanced Filtering System**: An intuitive and user-friendly filtering system that allows users to narrow down products options based on various attributes like alphabetically, price, and rating.
+- **Add to Bag**: A straightforward 'Add to Cart' feature that enables users to easily select producst they are interested in.
+- **Adding Reviews**: A feature allowing authenticated users to add products reviews after their purchase.
+- **Add to Wishlist**: A feature allowing authenticated users to add products to their wishlist for later purcahse.
+- **Easy Checkout Flow**: A streamlined checkout process designed for user convenience.
+- **Profile Dashboard**: A user dashboard for managing delivery information, viewing order history, reviews and wishlist.
+- **Admin Product Dashboard**: A robust admin panel that allows for easy management of adding and editing a product.
+
+#### Secondary Features
+
+- **Search Bar**: A simple search bar for keyword-based product searching.
+- **Toast and Email Notifications**: Notifications for important user actions and updates, delivered both as in-app toasts and emails.
+
+
+#### Future Enhancements
+
+These are functionalities and features that are not part of the initial design scope but are considered for future iterations of the platform to improve and expand its capabilities. It will be better aligned with user needs and market trends.
+
+- **Gift Cards**: The ability for users to purchase and redeem gift cards for products.
+- **Promo Codes**: Integration of promotional codes for discounts.
+- **Social Sign Up, Sign In**: Allowing users to sign up and sign in using their social media accounts.
+- **Vendor Access and Trip Submission**: A portal for trip vendors to submit and manage their own products.
+- **Chat Bot**: Customer service features including a chat bot for instant help.
+- **Currency Conversion**: To automatically convert prices into the user's preferred currency.
+
+
+### The Structure Plane
+
+
+
+[⬆️Back to top](<#📜table-of-contents>)
