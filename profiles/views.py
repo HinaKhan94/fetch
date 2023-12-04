@@ -72,6 +72,7 @@ def wishlist_view(request):
 
 @login_required
 def add_to_wishlist(request, product_id):
+    """view to add an item to wishlist """
     product = Product.objects.get(pk=product_id)
     
     # Check if the item is already in the wishlist
@@ -82,4 +83,16 @@ def add_to_wishlist(request, product_id):
         Wishlist.objects.create(user=request.user.userprofile, product=product)
         messages.success(request, f"{product.name} added to your wishlist.")
 
+    return redirect('wishlist')
+
+
+@login_required
+def remove_from_wishlist(request, wishlist_item_id):
+    """ to remove an item from wishlist """
+    wishlist_item = get_object_or_404(Wishlist, pk=wishlist_item_id)
+
+    # Remove the item from the user's wishlist
+    wishlist_item.delete()
+
+    # Redirect to the wishlist or wherever you want
     return redirect('wishlist')
