@@ -1,19 +1,19 @@
 {% extends "base.html" %}
 {% load static %}
 {% load crispy_forms_tags %}
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
 {% block content %}
-<!----- Breadcrumbs  ------>
-<div id="breadcrumbs" class="breadcrumbs">
-   <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-         <ol>
-            <li><a href="{% url 'home' %}">Home</a></li>
-            <li>Contact</li>
-         </ol>
-      </div>
-   </div>
-</div>
-<section class="bg-light">
+
+<section class="bg-light message-form">
    <div class="container">
       <div class="section-title section-header">
          <h1 class="contact-heading">Contact Us</h1>
@@ -39,7 +39,7 @@
                         <i class="fa-solid fa-envelope contact-icons"></i>
                         <h4>Email:</h4>
                      </div>
-                     <h5>admin@palpicker.com</h5>
+                     <h5>admin@fetch.com</h5>
                   </div>
                   <div class="col-lg-4 info mt-4 mt-lg-0">
                      <div class="icon-header">
@@ -54,7 +54,7 @@
       </div>
    </div>
 </section>
-<!------ Contact Form Section ------>
+<!------ Message Form Section ------>
 <div id="login" class="bg-light py-5">
    <div class="container">
       <div class="card-body">
@@ -66,9 +66,9 @@
             <br>
             <form method="POST">
                {% csrf_token %}
-               {{ contact_form | crispy }}
+               {{ message_form | crispy }}
                <br>
-               <button type="submit" class="btn btn-primary">Submit</button>
+               <button type="submit" class="btn btn-black rounded-0 text-uppercase mt-5">Submit</button>
             </form>
          </div>
       </div>

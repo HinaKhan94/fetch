@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views import View
+from .forms import MessageForm
+from django.contrib import messages
 
 # Create your views here.
 def index(request):
@@ -7,23 +9,23 @@ def index(request):
 
     return render(request, 'home/index.html')
 
-class ContactView(View):
+class MessageView(View):
     """
-    saves contact form data in the Contact model
+    saves inquiry data in the Contact model
     when the form is submitted successfully.
 
     """
-    template_name = 'home/contact.html'
+    template_name = 'home/message.html'
 
     def get(self, request):
-        contact_form = ContactForm()
-        context = {'contact_form': contact_form}
+        message_form = MessageForm()
+        context = {'message_form': message_form}
         return render(request, self.template_name, context)
 
     def post(self, request):
-        contact_form = ContactForm(request.POST)
-        if contact_form.is_valid():
-            contact_form.save()
+        message_form = MessageForm(request.POST)
+        if message_form.is_valid():
+            message_form.save()
             messages.success(request, "Your message has been sent! "
                              "You will be contacted within 24 hours.")
             return redirect('home')
@@ -31,4 +33,4 @@ class ContactView(View):
             messages.error(request, "There was an error "
                            "in your submission. Please try again.")
             # Redirects to the contact page in case of an error
-            return redirect('contact')
+            return redirect('message')

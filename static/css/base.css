@@ -362,6 +362,90 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+/* Contact Form */
+#contact {
+	padding: 0;
+}
+
+.message-form {
+    margin-top: 50px;
+}
+
+.contact-heading {
+	text-align: center;
+}
+
+.contact-details {
+	margin-top: 0;
+	padding-bottom: 10px;
+	align-items: center;
+}
+
+
+.contact .container {
+	align-items: center;
+}
+
+.contact .info-wrap {
+	background: #fff;
+	border-radius: 4px;
+}
+
+.contact .info i {
+	font-size: 20px;
+	color: #30241f;
+	float: left;
+	width: 44px;
+	height: 44px;
+	background: #f7fbfe;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+	padding: 0 0 0 10px;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #30241f;
+}
+
+.contact .info p {
+	padding: 0 0 0 60px;
+	margin-bottom: 0;
+	font-size: 14px;
+	color: #30241f;
+}
+
+.contact .info:hover i {
+	background: #30241f;
+	color: #fff;
+}
+
+.contact-form-container {
+	max-width: 500px;
+}
+
+.icon-header {
+	display: flex;
+	align-items: center;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.inquiry-icon {
+	color: #30241f;
+}
+
 
 /* -------------------------------- Media Queries */
 

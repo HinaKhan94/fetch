@@ -1,14 +1,14 @@
-from .models import Contact
+from .models import Messages
 from django.contrib.auth.models import User
 from django import forms
 
 
 
-class ContactForm(forms.ModelForm):
+class MessageForm(forms.ModelForm):
     """
     It is used on the contact page for any user
     queries
     """
     class Meta:
-        model = Contact
+        model = Messages
         fields = ['name', 'email', 'message']
