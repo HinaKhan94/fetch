@@ -1,1 +1,460 @@
-[{"model": "products.category", "pk": 1, "fields": {"name": "chicken_turkey", "friendly_name": "Chicken and Turkey"}}, {"model": "products.category", "pk": 2, "fields": {"name": "beef", "friendly_name": "Beef"}}, {"model": "products.category", "pk": 3, "fields": {"name": "dog_snacks", "friendly_name": "Dog Snacks"}}, {"model": "products.category", "pk": 4, "fields": {"name": "cat_chicken_turkey", "friendly_name": "Chicken and Turkey"}}, {"model": "products.category", "pk": 5, "fields": {"name": "beef_fish", "friendly_name": "Beef and Fish"}}, {"model": "products.category", "pk": 6, "fields": {"name": "cat_snacks", "friendly_name": "Cat Snacks"}}, {"model": "products.category", "pk": 7, "fields": {"name": "deals", "friendly_name": "Deals"}}, {"model": "products.category", "pk": 8, "fields": {"name": "special_offer", "friendly_name": "Special Offer"}}, {"model": "products.product", "pk": 1, "fields": {"category": 1, "sku": "f20230001", "name": "Edgar Cooper", "description": "Select the best from our range of Chicken and Turkey! This can come in various forms, such as dry kibble, wet canned food, or even raw food. The inclusion of chicken in dog food serves as a source of protein, which is essential for dogs' muscle development, maintenance, and overall health.", "price": "5.00", "rating": "0.00", "image_url": null, "image": "dog-chicken.jpeg"}}, {"model": "products.product", "pk": 2, "fields": {"category": 1, "sku": "f20230002", "name": "My Dog", "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives, MY DOG® recipes provide your dog a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of MY DOG® Classic Loaf With Tender Chicken.", "price": "10.00", "rating": "3.70", "image_url": null, "image": "dog-chicken2.jpeg"}}, {"model": "products.product", "pk": 3, "fields": {"category": 1, "sku": "f20230003", "name": "Fresh pet", "description": "Using all-natural chunks of chicken, this meaty recipe includes vitamin-rich carrots as well as high fiber brown rice, for a hearty meal your dog can’t wait to eat.\r\n\r\nchicken 1st ingredient\r\nno meat meals", "price": "10.00", "rating": "5.00", "image_url": null, "image": "dog-chicken3.jpeg"}}, {"model": "products.product", "pk": 4, "fields": {"category": 1, "sku": "f20230004", "name": "Fresh pet", "description": "Our recipe has not one, but two all-natural proteins as the first ingredients. This recipe also includes vitamin-rich carrots for a delicious, well-balanced meal that your dog will love. No corn, wheat, or rendered meals. Never any artificial preservatives, colours, or flavours.\r\n\r\nfarm raised turkey\r\nno meat meals", "price": "10.00", "rating": "5.00", "image_url": null, "image": "doh-chicken4.jpeg"}}, {"model": "products.product", "pk": 5, "fields": {"category": 1, "sku": "f20230005", "name": "Morando Professional", "description": "Fresh from our Kitchens with locally sourced shredded chicken and essential vitamins from carrots, spinach, and antioxidant-rich cranberries. Now you can easily provide the love of a home cooked, high protein, fresh meal to your dog with Freshpet® Fresh from the Kitchen.\r\n\r\nfarm raised chicken\r\nno meat meals", "price": "6.00", "rating": "2.60", "image_url": null, "image": "dog-chicken5.webp"}}, {"model": "products.product", "pk": 6, "fields": {"category": 2, "sku": "f20230006", "name": "Purina One", "description": "Using all-natural chunks of beef, this meaty recipe includes vitamin-rich carrots as well as high fiber brown rice, for a hearty meal your dog can’t wait to eat.\r\n\r\nbeef 1st ingredient\r\nno meat meals", "price": "12.00", "rating": "5.00", "image_url": null, "image": "dog-beef1.png"}}, {"model": "products.product", "pk": 7, "fields": {"category": 2, "sku": "f20230009", "name": "Pedigree", "description": "Protein-packed with beef, this soft & easy-to-chew recipe is nutritionally developed for the energy needs of dogs. It's a mouthwatering, nutrient-dense formula that provides dogs with the full spectrum of crucial amino acids they need to stay active and healthy.\r\n\r\nno meat meals\r\nno grains", "price": "5.00", "rating": "5.00", "image_url": null, "image": "dog-beef2.jpeg"}}, {"model": "products.product", "pk": 8, "fields": {"category": 2, "sku": "f20230007", "name": "Liberty", "description": "Liberty Dry Food for Dogs combines real meat with nutritious, whole food ingredients for a drool-worthy complete and balanced recipe. Made in the USA, Liberty Dry Food recipes are responsibly sourced so both you and your pup can feel good about what goes into their bowl.", "price": "19.00", "rating": "4.50", "image_url": null, "image": "dog-beef5.webp"}}, {"model": "products.product", "pk": 9, "fields": {"category": 2, "sku": "f20230008", "name": "Crave", "description": "Beef Recipe is packed with organic sourced beef and combined with nutritious whole food ingredients. Each recipe is cooked at low temperatures to help retain nutrients and flavor. Available in Grain-Free and Healthy Grain Recipes, Crave is responsibly sourced. All recipes are tested for digestibility ensuring your pup gets the most nutrition out of their bowl.", "price": "15.00", "rating": "4.00", "image_url": null, "image": "dog-beef6.webp"}}, {"model": "products.product", "pk": 10, "fields": {"category": 3, "sku": "f20230010", "name": "Pup Peroni", "description": "Pup-Peroni Minis dog treats feature the same meaty deliciousness of Pup-Peroni Original Beef Flavor dog snacks, now just the right size for smaller dogs and treating more often. Made with real beef as the #1 ingredient, Pup-Peroni Minis dog treats are perfect when you want to give an extra dog treat—because they’re always extra good.\r\n\r\nMade with real beef as the #1 ingredient\r\nSmaller sized treats let you treat more often!\r\nPerfectly sized for smaller dogs\r\nAvailable in 5.6 oz and 22.5 oz bags", "price": "10.00", "rating": "4.00", "image_url": null, "image": "dog-snacks1.webp"}}, {"model": "products.product", "pk": 11, "fields": {"category": 3, "sku": "f20230011", "name": "Milk bone", "description": "Mix up the fun with With beef and Sweet Potato dog snacks. Made with real meat and sweet potato to create a delicious combination of flavors your Pup will love. The irresistible 2-in-1 treat that lets your Pup know how much you care.", "price": "12.00", "rating": "4.50", "image_url": null, "image": "dog-snacks2.jpeg"}}, {"model": "products.product", "pk": 12, "fields": {"category": 3, "sku": "f20230012", "name": "Carry Outs", "description": "Unleash the delicious meaty taste your pup loves any time! Filet Mignon & Bacon Flavors dog snacks are made with mouth-watering, real Angus steak for a taste your dog will love.", "price": "12.00", "rating": "5.00", "image_url": null, "image": "dog-snacks3.jpeg"}}, {"model": "products.product", "pk": 13, "fields": {"category": 3, "sku": "f20230013", "name": "Milk Bone", "description": "Woof yeah! Be your best friend’s best friend with the amazingly meaty maplewood smoke flavor of real Bone marrow treats with calcium. Featuring Bone marrow as the #1 ingredient, these babies are irresistible.  With no added grains, fillers or artificial flavors. When your best bud gets a whiff of that mouthwatering aroma, you’ll suddenly feel like a hero.", "price": "14.00", "rating": "4.70", "image_url": null, "image": "dog-snacks4.jpeg"}}, {"model": "products.product", "pk": 14, "fields": {"category": 3, "sku": "f20230014", "name": "Milk Bone", "description": "Woof yeah! Be your best friend’s best friend with the amazingly mini treats. Featuring calcium and bone marrow as the #1 ingredient, these babies are irresistible. Even better, these are suitable for all sizes of dogs with no added grains, fillers or artificial flavors. When your best bud gets a whiff of that mouthwatering aroma, you’ll suddenly feel like a hero.", "price": "10.50", "rating": "4.80", "image_url": null, "image": "dog-snacks5.webp"}}, {"model": "products.product", "pk": 15, "fields": {"category": 4, "sku": "f20230015", "name": "Fussy Cat", "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives, Fussy Cat recipes provide your cat a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of Fussy Cat Classic Loaf With Tender Chicken.", "price": "5.00", "rating": "3.50", "image_url": null, "image": "cat-chicken1.webp"}}, {"model": "products.product", "pk": 16, "fields": {"category": 4, "sku": "f20230016", "name": "Animonda", "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives,  our recipes provide your cat a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of Animonda Classic Loaf With Tender Chicken.", "price": "7.00", "rating": "2.50", "image_url": null, "image": "cat-chicken2.jpg"}}, {"model": "products.product", "pk": 17, "fields": {"category": 4, "sku": "f20230017", "name": "Special Cat", "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives, Special Cat recipes provide your cat a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of Special Cat Classic Loaf With Tender Chicken.", "price": "10.00", "rating": "4.90", "image_url": null, "image": "cat-chicken3.webp"}}, {"model": "products.product", "pk": 18, "fields": {"category": 4, "sku": "f20230018", "name": "Kookut", "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives, Kookut® recipes provide your cat a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of Kookut® Classic Loaf With Tender Chicken.", "price": "5.00", "rating": "0.00", "image_url": null, "image": "cat-chicken4.webp"}}, {"model": "products.product", "pk": 19, "fields": {"category": 5, "sku": "f20230019", "name": "Animonda", "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives, Animonda® recipes provide your cat a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of Animonda® Classic Loaf With Tender Chicken.", "price": "5.00", "rating": "4.30", "image_url": null, "image": "cat-beef1.jpg"}}, {"model": "products.product", "pk": 20, "fields": {"category": 5, "sku": "f20230020", "name": "MyFoodie", "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives, MyFoodie® recipes provide your cat a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of MyFoodie® Classic Loaf With Tender Chicken.", "price": "10.00", "rating": "5.00", "image_url": null, "image": "cat-beef2.webp"}}, {"model": "products.product", "pk": 21, "fields": {"category": 5, "sku": "f20230021", "name": "Primal", "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives, Primal® recipes provide your cat a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of Primal® Classic Loaf With Tender Chicken.", "price": "10.00", "rating": "0.00", "image_url": null, "image": "cat-beef3.jpeg"}}, {"model": "products.product", "pk": 22, "fields": {"category": 6, "sku": "f20230022", "name": "JuicyBites", "description": "Mix up the fun with With beef and Sweet Potato cat snacks. Made with real meat and sweet potato to create a delicious combination of flavors your cat will love. The irresistible 2-in-1 treat that lets your cat know how much you care.", "price": "5.00", "rating": "5.00", "image_url": null, "image": "cat-snacks1_LEPcT7F.jpg"}}, {"model": "products.product", "pk": 23, "fields": {"category": 6, "sku": "f20230023", "name": "Purina", "description": "Mix up the fun with With beef and Sweet Potato cat snacks. Made with real meat and sweet potato to create a delicious combination of flavors your cat will love. The irresistible 2-in-1 treat that lets your cat know how much you care.", "price": "10.00", "rating": "4.50", "image_url": null, "image": "cat-snacks2.jpg"}}, {"model": "products.product", "pk": 24, "fields": {"category": 6, "sku": "f20230024", "name": "Mera", "description": "Mix up the fun with With beef and Sweet Potato cat snacks. Made with real meat and sweet potato to create a delicious combination of flavors your cat will love. The irresistible 2-in-1 treat that lets your cat know how much you care.", "price": "5.00", "rating": "3.00", "image_url": null, "image": "cat-snacks3.jpg"}}, {"model": "products.product", "pk": 25, "fields": {"category": 6, "sku": "f20230025", "name": "Whiskers", "description": "Mix up the fun with With beef and Sweet Potato cat snacks. Made with real meat and sweet potato to create a delicious combination of flavors your cat will love. The irresistible 2-in-1 treat that lets your cat know how much you care.", "price": "10.00", "rating": "4.90", "image_url": null, "image": "cat-snacks5.jpg"}}, {"model": "products.product", "pk": 26, "fields": {"category": 7, "sku": "f20230026", "name": "Happy Cat", "description": "Special deals", "price": "10.00", "rating": "5.00", "image_url": null, "image": "cat-deals1.jpg"}}, {"model": "products.product", "pk": 27, "fields": {"category": 7, "sku": "f20230027", "name": "Happy Cat", "description": "special for cat", "price": "10.00", "rating": "0.00", "image_url": null, "image": "cat-deal2.jpeg"}}, {"model": "products.product", "pk": 28, "fields": {"category": 7, "sku": "f20230029", "name": "Happy Dog", "description": "special offer for dog", "price": "10.00", "rating": "5.00", "image_url": null, "image": "dog-sale1_9Jhk4n3.webp"}}, {"model": "products.product", "pk": 29, "fields": {"category": 8, "sku": "f20230028", "name": "Happy Dog", "description": "Special for dogs", "price": "10.00", "rating": "5.00", "image_url": null, "image": "dog-sale1.webp"}}, {"model": "products.product", "pk": 30, "fields": {"category": 8, "sku": "f20230030", "name": "Happy Dog", "description": "Special for Dogs", "price": "10.00", "rating": "5.00", "image_url": null, "image": "cat-sale2.jpeg"}}, {"model": "products.product", "pk": 31, "fields": {"category": 8, "sku": "f20230031", "name": "Happy Dog", "description": "special for dogs", "price": "10.00", "rating": "5.00", "image_url": null, "image": "cat-sale4.jpeg"}}, {"model": "products.review", "pk": 1, "fields": {"product": 7, "user": 2, "created_on": "2023-11-30", "content": "My dog LOVED it. Will be buying again.", "rating": 5, "is_approved": true}}, {"model": "products.review", "pk": 6, "fields": {"product": 1, "user": 2, "created_on": "2023-12-04", "content": "Test Review", "rating": 4, "is_approved": false}}]
+[{
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "name": "chicken_turkey",
+        "friendly_name": "Chicken and Turkey"
+    }
+}, {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "beef",
+        "friendly_name": "Beef"
+    }
+}, {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "dog_snacks",
+        "friendly_name": "Dog Snacks"
+    }
+}, {
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+        "name": "cat_chicken_turkey",
+        "friendly_name": "Chicken and Turkey"
+    }
+}, {
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+        "name": "beef_fish",
+        "friendly_name": "Beef and Fish"
+    }
+}, {
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+        "name": "cat_snacks",
+        "friendly_name": "Cat Snacks"
+    }
+}, {
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+        "name": "deals",
+        "friendly_name": "Deals"
+    }
+}, {
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+        "name": "special_offer",
+        "friendly_name": "Special Offer"
+    }
+}, {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "category": 1,
+        "sku": "f20230001",
+        "name": "Edgar Cooper",
+        "description": "Select the best from our range of Chicken and Turkey! This can come in various forms, such as dry kibble, wet canned food, or even raw food. The inclusion of chicken in dog food serves as a source of protein, which is essential for dogs' muscle development, maintenance, and overall health.",
+        "price": "5.00",
+        "rating": "0.00",
+        "image_url": null,
+        "image": "dog-chicken.jpeg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "category": 1,
+        "sku": "f20230002",
+        "name": "My Dog",
+        "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives, MY DOG® recipes provide your dog a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of MY DOG® Classic Loaf With Tender Chicken.",
+        "price": "10.00",
+        "rating": "3.70",
+        "image_url": null,
+        "image": "dog-chicken2.jpeg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "category": 1,
+        "sku": "f20230003",
+        "name": "Fresh pet",
+        "description": "Using all-natural chunks of chicken, this meaty recipe includes vitamin-rich carrots as well as high fiber brown rice, for a hearty meal your dog can’t wait to eat.\r\n\r\nchicken 1st ingredient\r\nno meat meals",
+        "price": "10.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "dog-chicken3.jpeg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "category": 1,
+        "sku": "f20230004",
+        "name": "Fresh pet",
+        "description": "Our recipe has not one, but two all-natural proteins as the first ingredients. This recipe also includes vitamin-rich carrots for a delicious, well-balanced meal that your dog will love. No corn, wheat, or rendered meals. Never any artificial preservatives, colours, or flavours.\r\n\r\nfarm raised turkey\r\nno meat meals",
+        "price": "10.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "doh-chicken4.jpeg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "category": 1,
+        "sku": "f20230005",
+        "name": "Morando Professional",
+        "description": "Fresh from our Kitchens with locally sourced shredded chicken and essential vitamins from carrots, spinach, and antioxidant-rich cranberries. Now you can easily provide the love of a home cooked, high protein, fresh meal to your dog with Freshpet® Fresh from the Kitchen.\r\n\r\nfarm raised chicken\r\nno meat meals",
+        "price": "6.00",
+        "rating": "2.60",
+        "image_url": null,
+        "image": "dog-chicken5.webp"
+    }
+}, {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "category": 2,
+        "sku": "f20230006",
+        "name": "Purina One",
+        "description": "Using all-natural chunks of beef, this meaty recipe includes vitamin-rich carrots as well as high fiber brown rice, for a hearty meal your dog can’t wait to eat.\r\n\r\nbeef 1st ingredient\r\nno meat meals",
+        "price": "12.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "dog-beef1.png"
+    }
+}, {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "category": 2,
+        "sku": "f20230009",
+        "name": "Pedigree",
+        "description": "Protein-packed with beef, this soft & easy-to-chew recipe is nutritionally developed for the energy needs of dogs. It's a mouthwatering, nutrient-dense formula that provides dogs with the full spectrum of crucial amino acids they need to stay active and healthy.\r\n\r\nno meat meals\r\nno grains",
+        "price": "5.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "dog-beef2.jpeg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "category": 2,
+        "sku": "f20230007",
+        "name": "Liberty",
+        "description": "Liberty Dry Food for Dogs combines real meat with nutritious, whole food ingredients for a drool-worthy complete and balanced recipe. Made in the USA, Liberty Dry Food recipes are responsibly sourced so both you and your pup can feel good about what goes into their bowl.",
+        "price": "19.00",
+        "rating": "4.50",
+        "image_url": null,
+        "image": "dog-beef5.webp"
+    }
+}, {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "category": 2,
+        "sku": "f20230008",
+        "name": "Crave",
+        "description": "Beef Recipe is packed with organic sourced beef and combined with nutritious whole food ingredients. Each recipe is cooked at low temperatures to help retain nutrients and flavor. Available in Grain-Free and Healthy Grain Recipes, Crave is responsibly sourced. All recipes are tested for digestibility ensuring your pup gets the most nutrition out of their bowl.",
+        "price": "15.00",
+        "rating": "4.00",
+        "image_url": null,
+        "image": "dog-beef6.webp"
+    }
+}, {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "category": 3,
+        "sku": "f20230010",
+        "name": "Pup Peroni",
+        "description": "Pup-Peroni Minis dog treats feature the same meaty deliciousness of Pup-Peroni Original Beef Flavor dog snacks, now just the right size for smaller dogs and treating more often. Made with real beef as the #1 ingredient, Pup-Peroni Minis dog treats are perfect when you want to give an extra dog treat—because they’re always extra good.\r\n\r\nMade with real beef as the #1 ingredient\r\nSmaller sized treats let you treat more often!\r\nPerfectly sized for smaller dogs\r\nAvailable in 5.6 oz and 22.5 oz bags",
+        "price": "10.00",
+        "rating": "4.00",
+        "image_url": null,
+        "image": "dog-snacks1.webp"
+    }
+}, {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "category": 3,
+        "sku": "f20230011",
+        "name": "Milk bone",
+        "description": "Mix up the fun with With beef and Sweet Potato dog snacks. Made with real meat and sweet potato to create a delicious combination of flavors your Pup will love. The irresistible 2-in-1 treat that lets your Pup know how much you care.",
+        "price": "12.00",
+        "rating": "4.50",
+        "image_url": null,
+        "image": "dog-snacks2.jpeg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "category": 3,
+        "sku": "f20230012",
+        "name": "Carry Outs",
+        "description": "Unleash the delicious meaty taste your pup loves any time! Filet Mignon & Bacon Flavors dog snacks are made with mouth-watering, real Angus steak for a taste your dog will love.",
+        "price": "12.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "dog-snacks3.jpeg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "category": 3,
+        "sku": "f20230013",
+        "name": "Milk Bone",
+        "description": "Woof yeah! Be your best friend’s best friend with the amazingly meaty maplewood smoke flavor of real Bone marrow treats with calcium. Featuring Bone marrow as the #1 ingredient, these babies are irresistible.  With no added grains, fillers or artificial flavors. When your best bud gets a whiff of that mouthwatering aroma, you’ll suddenly feel like a hero.",
+        "price": "14.00",
+        "rating": "4.70",
+        "image_url": null,
+        "image": "dog-snacks4.jpeg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "category": 3,
+        "sku": "f20230014",
+        "name": "Milk Bone",
+        "description": "Woof yeah! Be your best friend’s best friend with the amazingly mini treats. Featuring calcium and bone marrow as the #1 ingredient, these babies are irresistible. Even better, these are suitable for all sizes of dogs with no added grains, fillers or artificial flavors. When your best bud gets a whiff of that mouthwatering aroma, you’ll suddenly feel like a hero.",
+        "price": "10.50",
+        "rating": "4.80",
+        "image_url": null,
+        "image": "dog-snacks5.webp"
+    }
+}, {
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "category": 4,
+        "sku": "f20230015",
+        "name": "Fussy Cat",
+        "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives, Fussy Cat recipes provide your cat a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of Fussy Cat Classic Loaf With Tender Chicken.",
+        "price": "5.00",
+        "rating": "3.50",
+        "image_url": null,
+        "image": "cat-chicken1.webp"
+    }
+}, {
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+        "category": 4,
+        "sku": "f20230016",
+        "name": "Animonda",
+        "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives,  our recipes provide your cat a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of Animonda Classic Loaf With Tender Chicken.",
+        "price": "7.00",
+        "rating": "2.50",
+        "image_url": null,
+        "image": "cat-chicken2.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+        "category": 4,
+        "sku": "f20230017",
+        "name": "Special Cat",
+        "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives, Special Cat recipes provide your cat a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of Special Cat Classic Loaf With Tender Chicken.",
+        "price": "10.00",
+        "rating": "4.90",
+        "image_url": null,
+        "image": "cat-chicken3.webp"
+    }
+}, {
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+        "category": 4,
+        "sku": "f20230018",
+        "name": "Kookut",
+        "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives, Kookut® recipes provide your cat a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of Kookut® Classic Loaf With Tender Chicken.",
+        "price": "5.00",
+        "rating": "0.00",
+        "image_url": null,
+        "image": "cat-chicken4.webp"
+    }
+}, {
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+        "category": 5,
+        "sku": "f20230019",
+        "name": "Animonda",
+        "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives, Animonda® recipes provide your cat a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of Animonda® Classic Loaf With Tender Chicken.",
+        "price": "5.00",
+        "rating": "4.30",
+        "image_url": null,
+        "image": "cat-beef1.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+        "category": 5,
+        "sku": "f20230020",
+        "name": "MyFoodie",
+        "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives, MyFoodie® recipes provide your cat a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of MyFoodie® Classic Loaf With Tender Chicken.",
+        "price": "10.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "cat-beef2.webp"
+    }
+}, {
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+        "category": 5,
+        "sku": "f20230021",
+        "name": "Primal",
+        "description": "Carefully prepared in the Hume Region of Australia using premium quality meat with no added preservatives, Primal® recipes provide your cat a delicious healthy meal full of essential vitamins and minerals. Cooked to perfection your dog will love the taste of Primal® Classic Loaf With Tender Chicken.",
+        "price": "10.00",
+        "rating": "0.00",
+        "image_url": null,
+        "image": "cat-beef3.jpeg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+        "category": 6,
+        "sku": "f20230022",
+        "name": "JuicyBites",
+        "description": "Mix up the fun with With beef and Sweet Potato cat snacks. Made with real meat and sweet potato to create a delicious combination of flavors your cat will love. The irresistible 2-in-1 treat that lets your cat know how much you care.",
+        "price": "5.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "cat-snacks1_LEPcT7F.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+        "category": 6,
+        "sku": "f20230023",
+        "name": "Purina",
+        "description": "Mix up the fun with With beef and Sweet Potato cat snacks. Made with real meat and sweet potato to create a delicious combination of flavors your cat will love. The irresistible 2-in-1 treat that lets your cat know how much you care.",
+        "price": "10.00",
+        "rating": "4.50",
+        "image_url": null,
+        "image": "cat-snacks2.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+        "category": 6,
+        "sku": "f20230024",
+        "name": "Mera",
+        "description": "Mix up the fun with With beef and Sweet Potato cat snacks. Made with real meat and sweet potato to create a delicious combination of flavors your cat will love. The irresistible 2-in-1 treat that lets your cat know how much you care.",
+        "price": "5.00",
+        "rating": "3.00",
+        "image_url": null,
+        "image": "cat-snacks3.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+        "category": 6,
+        "sku": "f20230025",
+        "name": "Whiskers",
+        "description": "Mix up the fun with With beef and Sweet Potato cat snacks. Made with real meat and sweet potato to create a delicious combination of flavors your cat will love. The irresistible 2-in-1 treat that lets your cat know how much you care.",
+        "price": "10.00",
+        "rating": "4.90",
+        "image_url": null,
+        "image": "cat-snacks5.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+        "category": 7,
+        "sku": "f20230026",
+        "name": "Happy Cat",
+        "description": "Special deals",
+        "price": "10.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "cat-deals1.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+        "category": 7,
+        "sku": "f20230027",
+        "name": "Happy Cat",
+        "description": "special for cat",
+        "price": "10.00",
+        "rating": "0.00",
+        "image_url": null,
+        "image": "cat-deal2.jpeg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+        "category": 7,
+        "sku": "f20230029",
+        "name": "Happy Dog",
+        "description": "special offer for dog",
+        "price": "10.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "dog-sale1_9Jhk4n3.webp"
+    }
+}, {
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+        "category": 8,
+        "sku": "f20230028",
+        "name": "Happy Dog",
+        "description": "Special for dogs",
+        "price": "10.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "dog-sale1.webp"
+    }
+}, {
+    "model": "products.product",
+    "pk": 30,
+    "fields": {
+        "category": 8,
+        "sku": "f20230030",
+        "name": "Happy Dog",
+        "description": "Special for Dogs",
+        "price": "10.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "cat-sale2.jpeg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+        "category": 8,
+        "sku": "f20230031",
+        "name": "Happy Dog",
+        "description": "special for dogs",
+        "price": "10.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "cat-sale4.jpeg"
+    }
+}]

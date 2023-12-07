@@ -29,6 +29,12 @@
  </div>
 <!----- End Breadcrumbs  ------>
     <div class="row">
+        {% if user_reviews_approved|length == 0 and user_reviews_pending|length == 0 %}
+            <div class="col-md-10 mx-auto mt-4">
+                <p>You have not reviews any products so far! Write your first review.</p>
+                <a hred="" class="btn btn-outline-black rounded-0 mt-5 text-decoration-none text-uppercase shadow-sm"> View all Products</a>
+            </div>
+        {% else %}
         <!-- Approved User Reviews -->
         {% for approved_review in user_reviews_approved %}
         <div class="col-md-10 mx-auto mt-md-3 mt-lg-4 mt-4">
@@ -129,5 +135,7 @@
         </div>
         {% endfor %}
     </div>
+    </div>
 </div>
+
 {% endblock %}
