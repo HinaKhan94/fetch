@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://fetch-petstore-665545f3d64c.herokuapp.com/sitemap.xml
