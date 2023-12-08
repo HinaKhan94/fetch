@@ -34,3 +34,8 @@ class MessageView(View):
                            "in your submission. Please try again.")
             # Redirects to the contact page in case of an error
             return redirect('message')
+
+def FaqView(request):
+    """ A view to return the Faq page """
+
+    return render(request, 'home/faq.html')

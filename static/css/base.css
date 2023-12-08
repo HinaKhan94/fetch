@@ -21,7 +21,7 @@ body {
 
 /*-------Breadcrumbs------*/
 .breadcrumbs {
-	padding: 10px 0;
+	padding: 5px 0;
 }
 
 .breadcrumbs h2 {
@@ -449,6 +449,11 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+/*-----------MailChimp--------------*/
+
+#mc_embed_signup form {
+    padding: 0;
+}
 
 /* -------------------------------- Media Queries */
 
