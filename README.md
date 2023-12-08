@@ -287,6 +287,171 @@ These are functionalities and features that are not part of the initial design s
 
 ### The Structure Plane
 
+# 🧮Testing
+
+The testing documentation can be found at [TESTING.md](https://github.com/H)
+
+# 🤖Technologies Used
+
+- Django - used to set up the back-logic and user model on the website.
+- GitHub - used to host the source code of the website. Also contains the record of the Agile development framework set up to plan the project, using issues, milestones, and projects on GitHub.
+- Gitpod - used to write and develop the code for the website, and for committing and pushing code to GitHub.
+- Heroku - used for live website deployment.
+- AWS S3 - is a cloud storage solution for website media and other static files. It also allows for the manipulation and optimization of media delivery.
+- Bootstrap - used throughout the site for responsiveness, layout, and predefined style elements.
+- Balsamiq - used to create the project wireframes.
+- MySQL - used for creating the ERD.
+- Google Fonts - used to import fonts for the website.
+- Font Awesome - used for icon features on the site.
+- Canva - used to generate the color scheme.
+- Name Fatso - used to generate Website's site.
+
+[⬆️Back to top](<#📜table-of-contents>)
+
+# ⚙️Deployment and Development (GitHub and Heroku)
+
+### Deploy on Heroku
+
+**Requirement and Procfile**
+
+Before deployment on Heroku, two files need to be created and be up to date, a `requirements.txt` file and a `Procfile`.
+
+- The `requirements.txt` file is created by executing the following command in the terminal window: ` pip3 freeze --local > requirements.txt`. A file with all requirements will be created.
+- Then create a file named `Procfile` and insert the following code: `web: gunicorn fetch_petstore.wsgi`, with no empty lines after it.
+- Then make sure to push these files to your repository.
+
+**Creating Heroku App**
+
+- Log into Heroku and go to the Dashboard.
+- Click "New" and then select "Create new app".
+- Give your app a name and select the region closest to you.
+- Click "Create app" to confirm.
+
+**Creating a database**
+
+- Log into ElephantSQL.com and access your dashboard.
+- Click "Create New Instance"
+- Set up a plan, give your plan a **Name**, select the **Tiny Turtel (Free)** plan, leave the **Tags** field blank.
+- Select "Select Region" and select a data center new you.
+- Click "Review".
+- Confirm your details and then click "Create instance".
+- Return to the ElephantSQL dashboard and click on the database instance name for this project.
+- In the URL section, click the copy icon to copy the database URL.
+- In your workspace make sure django and gunicorn are installed by running `pip3 install 'django<4' gunicorn`.
+- Equally make sure that infrastructure for the database is installed by running `pip3 install dj_database_url===0.5.0 psycopg2`.
+- Update the `requirements.txt` file if needed.
+
+**The env.py file**
+
+- If you do not have a `env.py` file in your workspace create one and make sure it is included in the `.gitignore` file.
+- At the top of the `env.py` file add the line: `import os`.
+- Below that add the following two lines:
+
+  `os.environ["DATABASE_URL"] = "<copied URL from SQL database>"` <br>
+  `os.environ["SECRET_KEY"] = "<create a secret key of your own>"` <br>
+
+- Make sure the environment variables are imported correctly into the `settings.py` file.
+- Run `python manage.py migrate` in the terminal window to migrate the data structure to the database instance.
+
+**Setting Environment Variables**
+
+- On the Heroku Dashboard select the app you just created and then select the "Settings" tab.
+- Click "Reveal Config Vars"
+- Add the following config vars: <br>
+
+  `DATABASE_URL` - copy the database URL from ElephantSQL in here, it should also be in the `env.py` file. <br>
+  `SECRET_KEY` - copy your secret key in here. <br>
+
+**Configuring Django App for Heroku:**
+
+  * Add `DATABASE_URL=<your_database_url_from_heroku>`
+  * Add `SECRET_KEY=<your_secret_key>`
+  * Add `USE_AWS=<True>`
+  * Add `AWS_ACCESS_KEY_ID=<your_key_id>`
+  * Add `AWS_BUCKET_NAME=<your_bucket_name>`
+  * Add `AWS_REGION_NAME=<your_region_name>`
+  * Add `AWS_SECRET_ACCESS_KEY=<your_secret_access_key_id>`
+  * Add `DEFAULT_FROM_EMAIL=<your_default_from_email_name>`
+  * Add `EMAIL_HOST_PASS=<your_email_host_pass>`
+  * Add `EMAIL_HOST_USER=<your_email_host_user>`
+  * Add `MAILCHIMP_API_KEY=<your_mailchimp_api_key>`
+  * Add `MAILCHIMP_AUDIENCE_ID=<your_mailchimp_audience_id>`
+  * Add `MAILCHIMP_REGION=<your_mailchimp_region>`
+  * Add `STRIPE_PUBLIC_KEY=<your_stripe_public_key>`
+  * Add `STRIPE_SECRET_KEY=<your_stripe_secret_key>`
+  * Add `STRIPE_WH_SECRET=<your_stripe_wh_secret>`
+
+
+* Add these variables to the Heroku 'Config Vars'.
+* Modify `settings.py` in your Django app.
+  * Replace the default secret key with `SECRET_KEY = os.environ.get('SECRET_KEY')`.
+  * Update the databases section to connect to the Heroku Postgres: `DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}`.
+
+**Setting Up AWS S3:**
+
+* Visit [AWS S3](https://aws.amazon.com/s3/) and either sign in or create an account.
+* Create a new S3 bucket and note down the necessary configurations like `AWS_S3_ENDPOINT_URL` and `AWS_STORAGE_BUCKET_NAME`.
+* Add these variables to Heroku 'Config Vars'.
+* Modify `settings.py` to configure AWS S3:
+* Add AWS configurations for static and media files.
+
+
+**Connecting to GitHub and Deploy**
+
+- On the Heroku Dashboard select the app you just created and then select the "Deploy" tab.
+- Select GitHub for the deployment method.
+- Search for the name of the project repository and click "Connect".
+- Further down the page, select "Enable Automatic Deploys" if desired.
+- Then finally further down, select "Deploy Branch" and watch the app being built.
+
+### Forking the Repository
+
+- Log in to GitHub and locate the GitHub repository you want to fork.
+- At the top of the Repository above the "Settings" Tab on the menu, locate the "Fork" Button and click it.
+- You will have a copy of the original repository in your GitHub account.
+- You will now be able to make changes to the new version and keep the original safe.
+
+### Making a Local Clone
+
+- Log into GitHub and locate the repository you want to clone.
+- Click the 'Code' dropdown above the file list.
+- Copy the URL for the repository.
+- Open Git Bash in your IDE.
+- Change the current working directory to the location where you want the cloned directory.
+- Type `git clone` in the CLI and then paste the URL you copied earlier. This is what it should look like:
+  `$ git clone https://github.com/`
+- Press Enter to create your local clone.
+
+You will need to install all of the packages listed in the requirements file you can use the following command in the terminal `pip install -r requirements.txt` which will do it for you.
+
+[⬆️Back to top](<#📜table-of-contents>)
+
+# 🎓Credits & Acknowledgements
+
+## Media
+
+**Images:**
+
+- Hero image was taken from [Raw Pixels](https://www.rawpixel.com/)
+- Images for products are taken from google.
+- Default image used to display without a featured image is also taken from google.
+
+## Code
+
+Resources and inspiration came from a few sources:
+
+- Especially during the initial setup of the project the Code Institute's 'Boutique Ado' Django walkthrough project was used to get started with the code and the layout.
+- Several past projects, youtube videos, google search and Chatgpt were of great help to clarify functions and PEP8 requirements. Also it inspired the developer in implementing the functionality in line with the requirements of PP4 and reaching the MVP stage:
+  - <a href="https://www.w3schools.com/">W3 Schools</a>
+  - <a href="https://stackoverflow.com">Stack Overflow</a>
+
+## Acknowledgements
+
+I would like to thank:
+
+- Medale Oluwafemi for your mentorship.
+- Inspiration from  [r](https://github.com/) for the contact page and user profile page design
+- Inspiration from  [U](https://github.c) for the Readme file.
 
 
 [⬆️Back to top](<#📜table-of-contents>)
