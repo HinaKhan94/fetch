@@ -8,7 +8,7 @@
 
 <div align="center">
 
-Live website link: [Fetch!](https://)
+Live website link: [Fetch!](https://fetch-petstore-665545f3d64c.herokuapp.com/)
 
 -- built with --
 <p style="background-color: white; padding: 5px; display: inline-block; margin: 0 auto;">
@@ -286,6 +286,304 @@ These are functionalities and features that are not part of the initial design s
 
 
 ### The Structure Plane
+
+# ⭐Features
+
+### Home Page Features
+
+#### 🧭 Navigation
+
+- **Minimalist Navbar**:
+
+<details><summary><b>Desktop View</b></summary>
+
+![Navbar Desktop View](github_)
+</details>
+
+<details><summary><b>Mobile View</b></summary>
+
+![Navbar Mobile View](github_)
+</details>
+
+- **Search**: 
+
+<details><summary><b>Desktop View</b></summary>
+
+![search-open](github_)
+
+</details>
+
+<details><summary><b>Mobile View</b></summary>
+
+![Mobile Search](github)
+</details>
+
+
+- **Dynamic Dropdown Menus**: 
+
+<details><summary><b>Nav Dropdowns</b></summary>
+
+![Empty Dropdown Cart](githu)
+
+
+
+![Dropdown Cart](github)
+
+
+
+
+</details>
+
+
+
+#### 🌟 Hero Section
+
+- **Hero Image Carousel**: 
+
+<details><summary><b>Desktop View</b></summary>
+
+![Hero Section Desktop View](github)
+</details>
+
+
+<details><summary><b>Mobile View</b></summary>
+
+![Hero Section Mobile View](github)
+</details>
+
+
+
+#### 📘 About Section
+
+- **About us section**: 
+
+<details><summary><b>Desktop View</b></summary>
+
+![About Section Desktop View](github)
+</details>
+
+
+
+#### 🌍 Location Carousel
+
+- **Browse by Destinations**: The Location Carousel allows users to explore various travel destinations based on the number of available trips. This feature provides a quick and intuitive way for users to identify destinations of interest.
+
+<details><summary><b>Desktop View</b></summary>
+
+![Location Carousel Desktop View](github_assets/readme_images/features/home/location-carousel.png)
+</details>
+
+
+#### 🌟 All Products Page
+
+- **Showcase all products**: 
+
+<details><summary><b></b></summary>
+
+![All Products Page](github)
+</details>
+
+- **Product Filtering**: 
+
+<details><summary><b></b></summary>
+
+![Product Filtering](github)
+</details>
+
+
+
+#### 📬 Footer
+
+- **Stay Connected**: 
+
+<details><summary><b>Desktop View</b></summary>
+
+![Footer ](gith)
+</details>
+
+
+
+- **Privacy Policy**: 
+
+- **Legal and Branding Compliance**: The footer also includes necessary copyright and disclaimer notices, fulfilling legal requirements and strengthening brand identity. This aspect is crucial for both branding and compliance with legal standards.
+
+
+
+### 🔍 Page Banner
+
+
+<details><summary><b>Desktop View</b></summary>
+
+![Page Banner Desktop](githu)
+</details>
+
+<details><summary><b>Mobile View</b></summary>
+
+![Page Banner Mobile](github)
+</details>
+
+
+### Product Detail Page Features
+
+#### 📷 Product Detail Main Section
+
+
+<details><summary><b>Desktop View</b></summary>
+
+![Product Details Desktop 1](gi)
+![Product Details Desktop 2](gith)
+</details>
+
+<details><summary><b>Mobile View</b></summary>
+
+![Product Details Mobile 1](github_)
+![Product Details Mobile 2](github_)
+</details>
+
+#### 📑 Product Reviews Section
+- **User Reviews**: Displays reviews from other buyers.
+- **Review Interaction**: Users are required to log in to leave a new review, encouraging engagement and maintaining quality interactions.
+- **CTAs for Reviews**: Clear calls to action are provided for both logged-in and logged-out users, guiding them to leave reviews and interact with the community.
+
+<details><summary><b>Review Section</b></summary>
+
+![Product Reviews](github_a)
+
+</details>
+
+
+### Cart and Checkout Features
+
+
+#### 🛍️ Cart Section
+- **Detailed Cart Overview**: Displays all products added to the cart, offering a clear summary of chosen items.
+- **Easy Product Management**: Options to remove products from the cart, allowing for effortless modification of selections.
+
+<details><summary><b>Desktop view</b></summary>
+
+![Cart Section Desktop](githu)
+</details>
+
+<details><summary><b>Mobile View</b></summary>
+
+![Cart Section Mobile](github_a)
+</details>
+
+#### 💳 Checkout 
+- **Streamlined Checkout Process**: A user-friendly checkout form simplifies the transaction process.
+- **Validation for Completion**: The checkout button activates only when all necessary fields are filled, ensuring accurate user input.
+
+
+<details><summary><b>Desktop View</b></summary>
+
+![Checkout Desktop](github_assets)
+</details>
+
+<details><summary><b>Mobile View</b></summary>
+
+![Checkout Mobile](github)
+</details>
+
+#### ✅ Checkout Success
+- **Confirmation of Success**: A distinct message signals the successful processing of payment, instilling confidence in users.
+- **Order Details**: Displays a unique order number for reference and assurance.
+- **Email Notification Confirmation**: Informs users that transaction details have been sent to their email, ensuring effective communication post-purchase.
+
+
+<details><summary><b>Desktop View</b></summary>
+
+![Checkout Success Desktop](github_assets/readme_images/features/cart_checkout/checkout-success.png)
+</details>
+
+<details><summary><b>Mobile View</b></summary>
+
+![Checkout Success Mobile](github_assets/readme_images/features/cart_checkout/mobile/m-checkout-success.png)
+</details>
+
+### User Profiles
+
+#### 🛠 Profile Management
+- **Access and Control**: Users can access their profile page to view and manage personal information and activities.
+- **Comprehensive Overview**: View purchases, wishlist, and posted reviews.
+- **Edit Personal Information**: Option to update personal details like name, contact information for a current profile.
+
+<details><summary><b>Desktop</b></summary>
+
+![New User Profile](github)
+![Wishlist](github)
+![User Reviews](github
+</details>
+
+<details><summary><b>Mobile</b></summary>
+
+![Mobile User Profile](github)
+![Mobile Wishlist](githu)
+![Mobile User Reviews](github_)
+</details>
+
+### Other Features
+
+#### 🪟 Modals
+Modals are used to delete/edit a review.
+
+<details><summary><b>Delete/edit Reviews</b></summary>
+
+- **Login Modal**: Streamlines the login process with a clear, user-friendly interface.
+- **Sign Up Modal**: Encourages new users to join with an easy-to-use registration form.
+
+![ Modal](github_assets/)
+
+</details>
+
+
+#### ✅ Login/Register
+
+
+<details><summary><b>Login & Sign Up</b></summary>
+
+- **Login Validation**: Checks user credentials for accuracy and security.
+- **Sign Up Validation**: Ensures all necessary information is provided correctly during registration.
+
+![Login](github_asse)
+![Register](githu)
+</details>
+
+
+<details><summary><b>Checkout</b></summary>
+
+- **Checkout Validation**: Ensures all transaction details are filled out correctly, enhancing the reliability of the checkout process.
+
+![Checkout Validation 1](gith)
+![Checkout Validation 2](gith)
+![Checkout Validation 3](githu)
+</details>
+
+
+#### 🛑 Custom Error Handler (404)
+
+- **Styled Design**: The 404 error page is designed to fit the overall website's theme, making it less disruptive for users who land on it.
+
+- **User Guidance**: Offers options to return to the homepage or navigate to other sections of the site.
+
+<details><summary><b>Custom 404 Handler</b></summary>
+
+![404 error](githu)
+</details>
+
+#### 👤 Admin Panel CMS
+
+
+- **Dashboard Access**: 
+
+
+<details><summary><b> Admin Dashboard</b></summary>
+
+![dashboard](githu)
+</details>
+
+
+[⬆️Back to top](<#📜table-of-contents>)
+
 
 # 🧮Testing
 
