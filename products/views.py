@@ -33,13 +33,13 @@ def all_products(request):
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
-                    sortkey = f'-{sortkey}'
+                    sortkey = f'-{sort}'
             products = products.order_by(sortkey)
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
-                    sortkey = f'-{sortkey}'
+                    sortkey = f'-{sort}'
             products = products.order_by(sortkey)
             
         if 'category' in request.GET:
