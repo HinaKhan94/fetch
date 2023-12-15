@@ -4,10 +4,13 @@ from .forms import MessageForm
 from django.contrib import messages
 
 # Create your views here.
+
+
 def index(request):
     """ A view to return the index page """
 
     return render(request, 'home/index.html')
+
 
 class MessageView(View):
     """
@@ -35,7 +38,9 @@ class MessageView(View):
             # Redirects to the contact page in case of an error
             return redirect('message')
 
+
 def FaqView(request):
     """ A view to return the Faq page """
 
     return render(request, 'home/faq.html')
+

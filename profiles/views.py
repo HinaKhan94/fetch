@@ -9,6 +9,7 @@ from products.models import Review, Product
 from products.utils import products_pagination
 from django.contrib.auth.decorators import login_required
 
+
 @login_required
 def profile(request):
     """ Display the user's profile. """
@@ -20,7 +21,9 @@ def profile(request):
             form.save()
             messages.success(request, 'Profile updated successfully')
         else:
-            messages.error(request, 'Update failed. Please ensure the form is valid.')
+            messages.error(
+                request, 'Update failed. Please ensure the form is valid.'
+            )
     else:
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
@@ -53,8 +56,14 @@ def order_history(request, order_number):
 
 
 def my_reviews(request):
-    user_reviews_approved = Review.objects.filter(user=request.user, is_approved=True)
-    user_reviews_pending = Review.objects.filter(user=request.user, is_approved=False)
+    user_reviews_approved = (
+        Review.objects
+        .filter(user=request.user, is_approved=True)
+    )
+    user_reviews_pending = (
+        Review.objects
+        .filter(user=request.user, is_approved=False)
+    )
 
     template = 'profiles/my_reviews.html'
     context = {
@@ -73,20 +82,24 @@ def wishlist_view(request):
     context = {'wishlist_items': paginated_wishlist}
     return render(request, template, context)
 
+
 @login_required
 def add_to_wishlist(request, product_id):
     """view to add an item to wishlist """
     product = Product.objects.get(pk=product_id)
-    
     # Check if the item is already in the wishlist
-    if Wishlist.objects.filter(user=request.user.userprofile, product=product).exists():
-        messages.warning(request, f"{product.name} is already in your wishlist.")
+    if Wishlist.objects.filter(
+        user=request.user.userprofile,
+        product=product
+         ).exists():
+        messages.warning(
+            request, f"{product.name} is already in your wishlist.")
     else:
         # Add the item to the wishlist
         Wishlist.objects.create(user=request.user.userprofile, product=product)
         messages.success(request, f"{product.name} added to your wishlist.")
 
-    return redirect('wishlist')
+    return redirect('products')
 
 
 @login_required
