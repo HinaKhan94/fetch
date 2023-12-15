@@ -34,7 +34,7 @@
     </div>
  </div>
 <!----- End Breadcrumbs  ------>
-        <div class="row">
+        <div class="row content">
             <div class="col">
                 {% if wishlist_items %}
                     <div class="table-responsive rounded">
@@ -104,7 +104,11 @@
                         </div>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your wishlist is empty.</p>
+                    <br>
+                    <br>
+                    <p class="lead mb-5 mt-4 text-center">Your wishlist is empty. Browser through our products and find your favorite!</p>
+                    <br>
+                    <br>
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>

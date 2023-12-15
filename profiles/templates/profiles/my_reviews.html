@@ -25,7 +25,7 @@
       </div>
    </div>
    <!----- End Breadcrumbs  ------>
-   <div class="row">
+   <div class="row content">
       {% if user_reviews_approved|length == 0 and user_reviews_pending|length == 0 %}
       <div class="col-md-10 mx-auto mt-4 mb-5">
          <p>You have not reviews any products so far! Write your first review.</p>
@@ -107,7 +107,7 @@
                <div class="modal-dialog" role="document">
                   <div class="modal-content">
                      <div class="modal-header justify-content-between bg-dark-grey py-3">
-                        <h2 class="font-body text-ib-light">DELETE REVIEW</h2>
+                        <h2 class="font-body">DELETE REVIEW</h2>
                         <button type="button" class="close modal-close-cross text-ib-light" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" class="ib-lh-1">&times;</span>
                         </button>
@@ -118,8 +118,8 @@
                         </p>
                      </div>
                      <div class="modal-footer pt-0">
-                        <button type="button" class="edit-del-btn dismiss-btn font-title text-decoration-none weight-regular align-middle me-2" data-dismiss="modal">CLOSE</button>
-                        <a href="{% url 'delete_review' pending_review.id %}?next={{ request.path|urlencode }}" class="edit-del-btn del-btn font-title text-decoration-none weight-bold align-middle">DELETE</a>
+                        <button type="button" class="btn btn-outline-black rounded-0 dismiss-btn font-title text-decoration-none weight-regular align-middle me-2" data-dismiss="modal">CLOSE</button>
+                        <a href="{% url 'delete_review' pending_review.id %}?next={{ request.path|urlencode }}" class="btn btn-black rounded-0 font-title text-decoration-none weight-bold align-middle">DELETE</a>
                      </div>
                   </div>
                </div>

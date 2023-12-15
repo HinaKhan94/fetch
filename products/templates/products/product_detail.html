@@ -50,10 +50,12 @@
                     {% endif %}
                     <br>
                     <!-- Add Wishlist Option -->
-                    <form method="post" action="{% url 'add_to_wishlist' product.id %}">
-                        {% csrf_token %}
-                        <button type="submit" class="btn btn-outline-primary wishlist-icon"><i class="fa-regular fa-heart fa-beat-fade"></i></button>
-                    </form>
+                    {% if user.is_authenticated %}
+                        <form method="post" action="{% url 'add_to_wishlist' product.id %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-outline-primary wishlist-icon"><i class="fa-regular fa-heart fa-beat-fade"></i></button>
+                        </form>
+                    {% endif %}
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
                             <a href="{% url 'edit_product' product.id %}">Edit</a> | 

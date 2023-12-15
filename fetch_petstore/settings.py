@@ -32,7 +32,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['8000-hinakhan94-fetch-udzbd6q6vqh.ws-eu106.gitpod.io',
                  'fetch-petstore.herokuapp.com',
                  'localhost',
-                 'fetch-petstore-665545f3d64c.herokuapp.com']
+                 'fetch-petstore-665545f3d64c.herokuapp.com',
+                 '8000-hinakhan94-fetch-udzbd6q6vqh.ws-us107.gitpod.io']
 
 
 # Application definition
