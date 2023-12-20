@@ -1,4 +1,4 @@
-# PROJECT TEST DOC - Palpicker
+# PROJECT TEST DOC - Fetch
 
 ## CONTENTS
 * [TESTS PERFORMED](#tests-performed)
@@ -43,32 +43,44 @@
   * [Back to Contents](#contents)
 
   ### HTML
-  All HTML pages were checked with [NU HTML Checker](https://validator.w3.org/nu/)
+  I ran the code for all the pages through the [W3C HTML Validator](https://validator.w3.org/nu/) using the textarea input by generating the source code from the deployed site (right click and select 'View Page Source' in Chrome) and pasting it in to allow me to check all pages whether requiring log in or not. All code passed the validation tests. Results below.
 
-  <details>
-    <summary>Click to View HTML Test Evidence</summary>
-    <br>
-      - <img src="">
-      - <img src="" width="60%">
-      <br>
-      - <img src="" width="60%">
-      <br>
-      - <img src="" width="60%">
-      <br>
-      - <img src="" width="60%">
-      <br>
 
-  </details>
+<details><summary>HTML Validation Results Table</summary>
+
+| **Feature** | **Expected Outcome** | **Test Performed** | **Result** | **Pass / Fail** |
+|---|---|---|---|---|
+| **HOME** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
+| **PRODUCTS** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
+| **PRODUCT DETAILS** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
+| **ADD PRODUCT** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | Form table errors & custom clearable fit input issue - resolved | PASS |
+| **EDIT PRODUCT** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | Form table errors & custom clearable fit input issue - resolved | PASS |
+| **ADD REVIEW** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
+| **EDIT REVIEW** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
+| **BAG** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | Duplicate ID error - resolved | PASS |
+| **CHECKOUT** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
+| **CHECKOUT SUCCESS** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
+| **PROFILE** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
+| **FAQS** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
+| **CONTACT US** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
+
+
+</details>
+
 
   * [Back to Contents](#contents)
 
   ### CSS
-  All CSS pages were checked with [JIGSAW W3 VALIDATION](https://jigsaw.w3.org/css-validator/)
+ I ran the CSS code through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input). All code passed the validation tests. Results below.
 
-  <details>
-    <summary>Click to View CSS Test Evidence</summary>
-      - <img src="static/docs/c" width="60%">
-  </details>
+
+<details><summary>CSS Validation Results Table</summary>
+
+| **Feature**    | **Expected Outcome**                  | **Test Performed**                                   | **Result**                                                                                                              | **Pass / Fail** |
+|----------------|---------------------------------------|------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------|
+| CSS Validation | Page passes validation with no errors | Ran CSS through https://jigsaw.w3.org/css-validator/ |  | PASS            |
+
+</details>
 
    * [Back to Contents](#contents)
 

@@ -12,6 +12,9 @@ body {
     min-height: 50vh; 
 }
 
+.account-dropdown {
+    z-index: 99999999999;
+}
 /*------ Hero Carousel------- */
 .c-item {
     height: 680px;
