@@ -297,25 +297,25 @@ These are functionalities and features that are not part of the initial design s
 
 <details><summary><b>Desktop View</b></summary>
 
-![Navbar Desktop View](github_)
+![Navbar Desktop View](/static/readme-docs/navbar-desktop.png)
 </details>
 
 <details><summary><b>Mobile View</b></summary>
 
-![Navbar Mobile View](github_)
+![Navbar Mobile View](/static/readme-docs/navbar-mobile.png)
 </details>
 
 - **Search**: 
 
 <details><summary><b>Desktop View</b></summary>
 
-![search-open](github_)
+![search-open](/static/readme-docs/navbar-desktop.png)
 
 </details>
 
 <details><summary><b>Mobile View</b></summary>
 
-![Mobile Search](github)
+![Mobile Search](/static/readme-docs/searchbar-mobile.png)
 </details>
 
 
@@ -323,11 +323,15 @@ These are functionalities and features that are not part of the initial design s
 
 <details><summary><b>Nav Dropdowns</b></summary>
 
-![Empty Dropdown Cart](githu)
+![Empty Dropdown Cart](/static/readme-docs/dropdown-%20desktop.png)
+
+<details><summary><b>Nav Dropdowns</b></summary>
+
+![Empty Dropdown Cart](/static/readme-docs/dropdown-mobile.png)
 
 
 
-![Dropdown Cart](github)
+![Dropdown Cart](/static/readme-docs/dropdown-cart.png)
 
 
 
