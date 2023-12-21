@@ -12,9 +12,7 @@ body {
     min-height: 50vh; 
 }
 
-.account-dropdown {
-    z-index: 99999999999;
-}
+
 /*------ Hero Carousel------- */
 .c-item {
     height: 680px;
@@ -245,7 +243,7 @@ input[name='q']::placeholder {
     position: fixed;
     top: 72px;
     right: 15px;
-    z-index: 99999999999;
+    z-index: 1000;
 }
 
 .custom-toast {
