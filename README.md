@@ -346,13 +346,13 @@ These are functionalities and features that are not part of the initial design s
 
 <details><summary><b>Desktop View</b></summary>
 
-![Hero Section Desktop View](github)
+![Hero Section Desktop View](/static/readme-docs/hero-desktop.png)
 </details>
 
 
 <details><summary><b>Mobile View</b></summary>
 
-![Hero Section Mobile View](github)
+![Hero Section Mobile View](/static/readme-docs/hero-mobile.png)
 </details>
 
 
@@ -363,19 +363,9 @@ These are functionalities and features that are not part of the initial design s
 
 <details><summary><b>Desktop View</b></summary>
 
-![About Section Desktop View](github)
+![About Section Desktop View](/static/readme-docs/aboutus.png)
 </details>
 
-
-
-#### 🌍 Location Carousel
-
-- **Browse by Destinations**: The Location Carousel allows users to explore various travel destinations based on the number of available trips. This feature provides a quick and intuitive way for users to identify destinations of interest.
-
-<details><summary><b>Desktop View</b></summary>
-
-![Location Carousel Desktop View](github_assets/readme_images/features/home/location-carousel.png)
-</details>
 
 
 #### 🌟 All Products Page
@@ -384,14 +374,14 @@ These are functionalities and features that are not part of the initial design s
 
 <details><summary><b></b></summary>
 
-![All Products Page](github)
+![All Products Page](/static/readme-docs/products.png)
 </details>
 
 - **Product Filtering**: 
 
 <details><summary><b></b></summary>
 
-![Product Filtering](github)
+![Product Filtering](/static/readme-docs/productfilter.png)
 </details>
 
 
@@ -402,7 +392,7 @@ These are functionalities and features that are not part of the initial design s
 
 <details><summary><b>Desktop View</b></summary>
 
-![Footer ](gith)
+![Footer ](/static/readme-docs/footer.png)
 </details>
 
 
@@ -418,12 +408,12 @@ These are functionalities and features that are not part of the initial design s
 
 <details><summary><b>Desktop View</b></summary>
 
-![Page Banner Desktop](githu)
+![Page Banner Desktop](/static/readme-docs/hero-desktop.png)
 </details>
 
 <details><summary><b>Mobile View</b></summary>
 
-![Page Banner Mobile](github)
+![Page Banner Mobile](/static/readme-docs/hero-mobile.png)
 </details>
 
 
@@ -434,14 +424,14 @@ These are functionalities and features that are not part of the initial design s
 
 <details><summary><b>Desktop View</b></summary>
 
-![Product Details Desktop 1](gi)
-![Product Details Desktop 2](gith)
+![Product Details Desktop 1](/static/readme-docs/productdetail.png)
+![Product Details Desktop 2](/static/readme-docs/productdetail1.png)
 </details>
 
 <details><summary><b>Mobile View</b></summary>
 
-![Product Details Mobile 1](github_)
-![Product Details Mobile 2](github_)
+![Product Details Mobile 1](/static/readme-docs/pd1.png)
+![Product Details Mobile 2](/static/readme-docs/pd2.png)
 </details>
 
 #### 📑 Product Reviews Section
@@ -496,7 +486,7 @@ These are functionalities and features that are not part of the initial design s
 
 <details><summary><b>Desktop View</b></summary>
 
-![Checkout Success Desktop](github_assets/readme_images/features/cart_checkout/checkout-success.png)
+![Checkout Success Desktop](git)
 </details>
 
 <details><summary><b>Mobile View</b></summary>
@@ -513,16 +503,16 @@ These are functionalities and features that are not part of the initial design s
 
 <details><summary><b>Desktop</b></summary>
 
-![New User Profile](github)
-![Wishlist](github)
-![User Reviews](github
+![New User Profile](/static/readme-docs/profile.png)
+![Wishlist](/static/readme-docs/wishlist.png)
+![User Reviews](/static/readme-docs/review.png)
 </details>
 
 <details><summary><b>Mobile</b></summary>
 
-![Mobile User Profile](github)
-![Mobile Wishlist](githu)
-![Mobile User Reviews](github_)
+![Mobile User Profile](/static/readme-docs/profilemobile.png)
+![Mobile Wishlist](/static/readme-docs/)
+![Mobile User Reviews](/static/readme-docs/profilereview.png)
 </details>
 
 ### Other Features
