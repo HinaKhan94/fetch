@@ -200,7 +200,7 @@ The development of this project was managed through GitHub issues, milestones, a
   - Add functionality to add/approve reviews
   - MVP reached
 
-- Sprint 4: Initial Set-up - December 15th, 2023 to December 20th, 2023
+- Sprint 4: Initial Set-up - December 15th, 2023 to December 25th, 2023
 
   - Create App on Heroku
   - Create the database in Elephantsql
@@ -209,7 +209,7 @@ The development of this project was managed through GitHub issues, milestones, a
   - Update/create project files: settings.py, env.py, Procfile
   - Migrate changes
 
-- Sprint 5: Testing, Final revisions to code and documentation - December 20th to December 25th, 2023
+- Sprint 5: Testing, Final revisions to code and documentation - December 25th 2023 to Januaryde 5th, 2024
 
   - HTML testing, fixing errors and warnings
   - CSS testing
@@ -324,10 +324,12 @@ These are functionalities and features that are not part of the initial design s
 <details><summary><b>Nav Dropdowns</b></summary>
 
 ![Empty Dropdown Cart](/static/readme-docs/dropdown-%20desktop.png)
+</details>
 
 <details><summary><b>Nav Dropdowns</b></summary>
 
 ![Empty Dropdown Cart](/static/readme-docs/dropdown-mobile.png)
+</details>
 
 
 
@@ -441,7 +443,7 @@ These are functionalities and features that are not part of the initial design s
 
 <details><summary><b>Review Section</b></summary>
 
-![Product Reviews](github_a)
+![Product Reviews](/static/readme-docs/review-sec.png)
 
 </details>
 
@@ -455,12 +457,12 @@ These are functionalities and features that are not part of the initial design s
 
 <details><summary><b>Desktop view</b></summary>
 
-![Cart Section Desktop](githu)
+![Cart Section Desktop](/static/readme-docs/cart-desktop.png)
 </details>
 
 <details><summary><b>Mobile View</b></summary>
 
-![Cart Section Mobile](github_a)
+![Cart Section Mobile](/static/readme-docs/cart-mobile.png)
 </details>
 
 #### 💳 Checkout 
@@ -511,7 +513,7 @@ These are functionalities and features that are not part of the initial design s
 <details><summary><b>Mobile</b></summary>
 
 ![Mobile User Profile](/static/readme-docs/profilemobile.png)
-![Mobile Wishlist](/static/readme-docs/)
+![Mobile Wishlist](/static/readme-docs/wishlist-mobile.png)
 ![Mobile User Reviews](/static/readme-docs/profilereview.png)
 </details>
 
@@ -520,12 +522,11 @@ These are functionalities and features that are not part of the initial design s
 #### 🪟 Modals
 Modals are used to delete/edit a review.
 
-<details><summary><b>Delete/edit Reviews</b></summary>
+<details><summary><b>Delete Modals</b></summary>
 
-- **Login Modal**: Streamlines the login process with a clear, user-friendly interface.
-- **Sign Up Modal**: Encourages new users to join with an easy-to-use registration form.
+- **Delete Review Modal**: Deletes a review made by the user.
 
-![ Modal](github_assets/)
+![ Delete Review Modal](/static/readme-docs/del-review.png)
 
 </details>
 
@@ -538,8 +539,8 @@ Modals are used to delete/edit a review.
 - **Login Validation**: Checks user credentials for accuracy and security.
 - **Sign Up Validation**: Ensures all necessary information is provided correctly during registration.
 
-![Login](github_asse)
-![Register](githu)
+![Login](/static/readme-docs/signup.png)
+![Register](/static/readme-docs/registerimg.png)
 </details>
 
 
@@ -572,7 +573,8 @@ Modals are used to delete/edit a review.
 
 <details><summary><b> Admin Dashboard</b></summary>
 
-![dashboard](githu)
+![dashboard](/static/readme-docs/admin-dashboard.png)
+![dashboard](/static/readme-docs/admin-db1.png)
 </details>
 
 

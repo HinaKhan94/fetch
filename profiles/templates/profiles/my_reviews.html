@@ -40,7 +40,7 @@
             <h5 class="card-title">{{ approved_review.product.name }}</h5>
             <p><strong>{{ approved_review.content }}</strong></p>
             <p>You rated: {{ approved_review.rating }}/5</p>
-            <p class="card-text"><span class="badge bg-success">Approved</span>
+            <p class="card-text"><span class="badge bg-success approve-text">Approved</span>
             </p>
             <p class="card-text">
                {% if request.user.is_superuser or request.user == approved_review.user %}
@@ -88,7 +88,7 @@
             <h5 class="card-title">{{ pending_review.product.name }}</h5>
             <p><strong>{{ pending_review.content }}</strong></p>
             <p>You rated: {{ pending_review.rating }}/5</p>
-            <p class="card-text"><span class="badge bg-warning text-dark">Pending</span>
+            <p class="card-text"><span class="badge bg-warning approve-text">Pending</span>
             </p>
             <p class="card-text">
                {% if request.user.is_superuser or request.user == pending_review.user %}

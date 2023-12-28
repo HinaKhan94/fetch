@@ -47,6 +47,10 @@
 	padding: 20px;
 }
 
+.approve-text {
+    color: white;
+}
+
 /* Pagination */
 .page-link {
     color: var(--dark-gray);
