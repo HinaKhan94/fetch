@@ -483,7 +483,6 @@ These are functionalities and features that are not part of the initial design s
 #### ✅ Checkout Success
 - **Confirmation of Success**: A distinct message signals the successful processing of payment, instilling confidence in users.
 - **Order Details**: Displays a unique order number for reference and assurance.
-- **Email Notification Confirmation**: Informs users that transaction details have been sent to their email, ensuring effective communication post-purchase.
 
 
 <details><summary><b>Desktop View</b></summary>
