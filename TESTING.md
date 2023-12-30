@@ -23,20 +23,16 @@
 
   ### Manual User Story Tests
   User story tests were conducted systematically, with any failing tests rectified. 
-  <details>
+   <details>
     <summary>Click to View Manual User Story Test Evidence</summary>
-    <br>
-      - <img src="static/docs/" width="60%">
-      <br>
-      - <img src="static/docs/" width="60%">
-      <br>
-      - <img src="static/docs/" width="60%">
-      <br>
-      - <img src="static/docs/" width="60%">
-      <br>
-      - <img src="" width="60%">
-      <br>
     
+  ![Manual Test Part 1](/static/readme-docs/mt1.png)
+
+  ![Manual Test Part 2](/static/readme-docs/mt2.png)
+
+  ![Manual Test Part 3](/static/readme-docs/mt3.png)
+
+  ![Manual Test Part 4](/static/readme-docs/mt4.png)
 
   </details>
 
@@ -89,7 +85,12 @@
 
   <details>
     <summary>Click to View JSHINT Test Evidence</summary>
-      - <img src="" width="60%">
+  
+  ![Stripe_elements](/static/readme-docs/stripe_elements.png)
+
+  ![Quantity-input](/static/readme-docs/quantity-input.png)
+
+  ![CountryField](/static/readme-docs/countryfield.png)
 
   </details>
 
@@ -99,31 +100,31 @@
   All Python pages were checked with [CODE INSTITUTES PYTHON LINTER](https://pep8ci.herokuapp.com/)
 
   <details>
-    <summary>Click to View PYLINT Test Evidence</summary>
-      - Views.py from User App
-      <br>
-      - <img src="https://res.cl" width="60%">
-      <br>
-      - Views.py from Offer App
-      <br>
-      - <img src="https://" width="60%">
-      <br>
-      - Models.py from Offer App
-      <br>
-      - <img src="https://" width="60%">
-      <br>
-      - Forms.py from Offer App
-      <br>
-      - <img src="https://re" width="60%">
-      <br>
-      - Forms.py from User App
-      <br>
-      - <img src="https:/" width="60%">
-      <br>
-      - Urls.py from Offer App
-      <br>
-      - <img src="https://r" width="60%">
-      <br>
+    <summary>Click to View Pylint Test Evidence</summary>
+    
+  ![Views.py from Bag App](/static/readme-docs/bagapp.png)
+
+  ![Views.py from Checkout App](/static/readme-docs/checkout-views.png)
+
+  ![Models.py from Checkout App](/static/readme-docs/checkout-models.png)
+
+  ![Forms.py from Checkout App](/static/readme-docs/checkout-form.png)
+
+  ![Views.py from Home App](/static/readme-docs/home-views.png)
+
+  ![Models.py from Home App](/static/readme-docs/home-models.png)
+
+  ![Models.py from Products App](/static/readme-docs/products-models.png)
+
+  ![Forms.py from Products App](/static/readme-docs/products-form.png)
+
+  ![Views.py from Products App](/static/readme-docs/products-views.png)
+
+  ![Views.py from Profile App](/static/readme-docs/profiles-views.png)
+
+  ![Models.py from Products App](/static/readme-docs/profiles-models.png)
+
+  ![Forms.py from Products App](/static/readme-docs/profiles-form.png)
 
   </details>
 
