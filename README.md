@@ -29,7 +29,6 @@ Live website link: [Fetch!](https://fetch-petstore-665545f3d64c.herokuapp.com/)
 ---
 
 # Introduction
-<img alt="logo" src="" width="300px">
 
  Welcome to Fetch! an online pet store, with a wide range of products, from gourmet treats and premium pet food. Whether you're a proud cat parent, a devoted dog lover, at Fetch; a user can buy their pet's favorite food according to different categories. The website combines a user-friendly interface with a robust set of features to create a hassle free buying experience.
 
@@ -142,9 +141,9 @@ The target market could be:
 2. **Social Media:** Leverage platforms like Facebook and Instagram, where content can be highly engaging.
 
 <details><summary><b>Facebook Screenshots</b></summary>
-![Facebook-page](github_assets/readme)
-![Facebook-post1](github_assets/readme)
-![Facebook-post2](github_assets/readme)
+![Facebook-page](/static/readme-docs/facebook.png)
+![Facebook-post1](/static/readme-docs/facebook1.png)
+![Facebook-post2](/static/readme-docs/facebook2.png)
 </details>
 
 ### Key Performance Indicators (KPIs)
@@ -472,12 +471,12 @@ These are functionalities and features that are not part of the initial design s
 
 <details><summary><b>Desktop View</b></summary>
 
-![Checkout Desktop](github_assets)
+![Checkout Desktop](/static/readme-docs/checkout.png)
 </details>
 
 <details><summary><b>Mobile View</b></summary>
 
-![Checkout Mobile](github)
+![Checkout Mobile](/static/readme-docs/checkoutmb.png)
 </details>
 
 #### ✅ Checkout Success
@@ -487,12 +486,12 @@ These are functionalities and features that are not part of the initial design s
 
 <details><summary><b>Desktop View</b></summary>
 
-![Checkout Success Desktop](git)
+![Checkout Success Desktop](/static/readme-docs/checkout-success.png)
 </details>
 
 <details><summary><b>Mobile View</b></summary>
 
-![Checkout Success Mobile](github_assets/readme_images/features/cart_checkout/mobile/m-checkout-success.png)
+![Checkout Success Mobile](/static/readme-docs/checkout-mobile.png)
 </details>
 
 ### User Profiles
@@ -540,16 +539,6 @@ Modals are used to delete/edit a review.
 
 ![Login](/static/readme-docs/signup.png)
 ![Register](/static/readme-docs/registerimg.png)
-</details>
-
-
-<details><summary><b>Checkout</b></summary>
-
-- **Checkout Validation**: Ensures all transaction details are filled out correctly, enhancing the reliability of the checkout process.
-
-![Checkout Validation 1](gith)
-![Checkout Validation 2](gith)
-![Checkout Validation 3](githu)
 </details>
 
 
@@ -743,8 +732,9 @@ Resources and inspiration came from a few sources:
 I would like to thank:
 
 - Medale Oluwafemi for your mentorship.
-- Inspiration from  [r](https://github.com/) for the contact page and user profile page design
-- Inspiration from  [U](https://github.c) for the Readme file.
+- Inspiration from  [Russ-S](https://github.com/rstan-dev) for the contact page and user profile page design
+- Inspiration from  [Ulrike R. Donohue](https://github.com/URiem) for website concept.
+- Inspiration from  [Karolis](https://github.com/kpetrauskas92) for the Readme file.
 
 
 [⬆️Back to top](<#📜table-of-contents>)

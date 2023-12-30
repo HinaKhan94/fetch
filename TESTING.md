@@ -160,13 +160,11 @@
 
   <details>
     <summary>Click to View Browser Test Evidence</summary>
-      - <img src="static/" width="60%">
+      - <img src="/static/readme-docs/explorer.png" width="60%">
       <br>
-      - <img src="static/" width="60%">
+      - <img src="/static/readme-docs/chrome.png" width="60%">
       <br>
-      - <img src="static/d" width="60%">
-      <br>
-      - <img src="static" width="60%">
+      - <img src="/static/readme-docs/safari.png" width="60%">
       <br>
       
 

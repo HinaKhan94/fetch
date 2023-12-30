@@ -243,8 +243,8 @@ input[name='q']::placeholder {
     position: fixed;
     top: 72px;
     right: 15px;
-    z-index: 999999999999;
-    padding-top: 30px;
+    z-index: 1000;
+    padding-top: 124px;
 }
 
 .custom-toast {
