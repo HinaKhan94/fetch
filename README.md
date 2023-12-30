@@ -1,17 +1,17 @@
 # Fetch! Pet Store
 
-![last update](https://img.shields.io/badge/Last_update:-25.11.2023-9d3f3f)
+![last update](https://img.shields.io/badge/Last_update:-05.01.2024-9d3f3f)
 ![deployment](https://img.shields.io/static/v1?label=deployed&message=Yes&color=success&style=plastic)
 ![deployment platform](https://img.shields.io/static/v1?label=platform&message=Heroku&color=634987&style=plastic)
 
-![responsive-mockup](github_asset)
+![responsive-mockup](/static/readme-docs/mockup.png)
 
 <div align="center">
 
 Live website link: [Fetch!](https://fetch-petstore-665545f3d64c.herokuapp.com/)
 
 -- built with --
-<p style="background-color: white; padding: 5px; display: inline-block; margin: 0 auto;">
+
 
 <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="html5" width="40" height="40"/>
 <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="css3" width="40" height="40"/>
@@ -141,9 +141,12 @@ The target market could be:
 2. **Social Media:** Leverage platforms like Facebook and Instagram, where content can be highly engaging.
 
 <details><summary><b>Facebook Screenshots</b></summary>
-![Facebook-page](/static/readme-docs/facebook.png)
+
+![Facebook](/static/readme-docs/facebook.png)
+
 ![Facebook-post1](/static/readme-docs/facebook1.png)
-![Facebook-post2](/static/readme-docs/facebook2.png)
+
+![Facebook-post1](/static/readme-docs/facebook2.png)
 </details>
 
 ### Key Performance Indicators (KPIs)
@@ -229,7 +232,7 @@ The development of this project was managed through GitHub issues, milestones, a
 
 For the full kanban board please visit GitHub Projects for Overall Development Overview and User Stories.
 
-[Complete Kanban Overview](https://github.com)
+[Complete Kanban Overview](https://github.com/users/HinaKhan94/projects/3)
 
 
 [⬆️Back to top](<#📜table-of-contents>)
@@ -269,7 +272,7 @@ This plane defines the boundaries of the design project, outlining what is to be
 #### Secondary Features
 
 - **Search Bar**: A simple search bar for keyword-based product searching.
-- **Toast and Email Notifications**: Notifications for important user actions and updates, delivered both as in-app toasts and emails.
+- **Toast Notifications**: Notifications for important user actions and updates, delivered as in-app toasts.
 
 
 #### Future Enhancements
@@ -320,20 +323,22 @@ These are functionalities and features that are not part of the initial design s
 
 - **Dynamic Dropdown Menus**: 
 
-<details><summary><b>Nav Dropdowns</b></summary>
+<details><summary><b>Nav Dropdown Desktop</b></summary>
 
 ![Empty Dropdown Cart](/static/readme-docs/dropdown-%20desktop.png)
 </details>
 
-<details><summary><b>Nav Dropdowns</b></summary>
+<details><summary><b>Nav Dropdown Mobile</b></summary>
 
 ![Empty Dropdown Cart](/static/readme-docs/dropdown-mobile.png)
 </details>
 
 
+<details><summary><b>Cart Dropdown</b></summary>
 
 ![Dropdown Cart](/static/readme-docs/dropdown-cart.png)
 
+</details>
 
 
 
@@ -571,7 +576,7 @@ Modals are used to delete/edit a review.
 
 # 🧮Testing
 
-The testing documentation can be found at [TESTING.md](https://github.com/H)
+The testing documentation can be found at [TESTING.md](https://github.com/HinaKhan94/fetch/blob/main/TESTING.md)
 
 # 🤖Technologies Used
 

@@ -156,17 +156,16 @@
   * [Back to Contents](#contents)
 
   ### Browser Compatability
-  - The site was tested using [Browserstack](https://www.browserstack.com/) to ensure compatibility across various browsers, Windows and Android, Chrome, Safari and Firefox.
+  - The site was tested using [Browserstack](https://www.browserstack.com/) to ensure compatibility across various browsers, Chrome, Safari and Firefox.
 
   <details>
     <summary>Click to View Browser Test Evidence</summary>
-      - <img src="/static/readme-docs/explorer.png" width="60%">
-      <br>
-      - <img src="/static/readme-docs/chrome.png" width="60%">
-      <br>
-      - <img src="/static/readme-docs/safari.png" width="60%">
-      <br>
-      
+    
+  ![Firefox](/static/readme-docs/explorer.png)
+
+  ![Chrome](/static/readme-docs/chrome.png)
+
+  ![Safari](/static/readme-docs/safari.png)
 
   </details>
 
