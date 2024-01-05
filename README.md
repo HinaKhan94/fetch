@@ -257,6 +257,7 @@ For the full kanban board please visit GitHub Projects for Overall Development O
 
 This plane defines the boundaries of the design project, outlining what is to be included in terms of features and functionalities.
 
+
 #### Core Functionalities
 
 - **User Sign In and Sign Up**: Secure and easy-to-navigate user authentication process for signing in and up.
@@ -337,10 +338,6 @@ These are functionalities and features that are not part of the initial design s
 <details><summary><b>Cart Dropdown</b></summary>
 
 ![Dropdown Cart](/static/readme-docs/dropdown-cart.png)
-
-</details>
-
-
 
 </details>
 
@@ -569,6 +566,57 @@ Modals are used to delete/edit a review.
 ![dashboard](/static/readme-docs/admin-dashboard.png)
 ![dashboard](/static/readme-docs/admin-db1.png)
 </details>
+
+
+### The Skeleton Plane
+
+#### Wireframe Mock-ups
+
+Wireframes for key pages have been designed to visualize the layout and functionality of the platform. This helps in providing a clear roadmap for development and ensures that user experience is a focal point from the beginning.
+
+<details><summary><b>Homepage</b></summary>
+
+![Homepage Wireframe](/static/readme-docs/homewire.png)
+
+</details>
+
+<details><summary><b>Order Summary</b></summary>
+
+![Order Summary Wireframe](/static/readme-docs/ordersumm.png)
+
+</details>
+
+<details><summary><b>Checkout</b></summary>
+
+![Checkout Wireframe](/static/readme-docs/checkout-wire.png)
+
+</details>
+
+<details><summary><b>User Profile</b></summary>
+
+![User Profile Wireframe](/static/readme-docs/userprofile-wire.png)
+
+</details>
+
+#### Database schema
+
+I created a database schema using [DrawSQL](https://www.drawsql.com/) to map out the database schema for the site.
+
+![Database Diagram](/static/readme-docs/dbschema.png)
+
+### The Surface Plane
+
+#### Design
+
+The website uses the following color palette:
+
+- Brown (#30241f)
+- Black
+- White
+
+#### Typography
+
+The website uses Lato as its main font with sans serif as fall back font.
 
 
 [⬆️Back to top](<#📜table-of-contents>)
