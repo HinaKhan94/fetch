@@ -11,7 +11,7 @@
   * [Browser Compatability](#browser-compatability)
   * [Unsolved Bugs](#unsolved-bugs)
 
-  [Return to README.md](https://github.com/)
+  [Return to README.md](https://github.com/HinaKhan94/fetch/blob/main/README.md)
 
 
 ## TESTS PERFORMED
@@ -49,8 +49,6 @@
 | **HOME** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
 | **PRODUCTS** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
 | **PRODUCT DETAILS** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
-| **ADD PRODUCT** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | Form table errors & custom clearable fit input issue - resolved | PASS |
-| **EDIT PRODUCT** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | Form table errors & custom clearable fit input issue - resolved | PASS |
 | **ADD REVIEW** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
 | **EDIT REVIEW** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
 | **BAG** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | Duplicate ID error - resolved | PASS |
@@ -137,10 +135,10 @@
   * The performance issues are related to image sizes and have been noted in the Future Enhancements
 
   <details>
-    <summary>Click to View LightHouse Test Evidence</summary>
-      - <img src="https://" width="60%">
+    <summary>Click to View LightHouse Test Evidence (Desktop & Mobile)</summary>
+      - <img src="/static/readme-docs/lh-desktop.png" width="60%">
       <br>
-      - <img src="https://" width="60%">
+      - <img src="/static/readme-docs/lh-mobile.png" width="60%">
       <br>
 
   </details>
@@ -150,11 +148,6 @@
   ### PEP8
   During development, any PEP8 problems in the IDE tab were addressed.  The following were left as they are in the settings and env.py files and relate to specific links or security keys.
 
-  <details>
-    <summary>Click to View PEP8 Evidence</summary>
-      - <img src="https://" width="60%">
-
-  </details>
 
   * [Back to Contents](#contents)
 
