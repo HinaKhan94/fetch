@@ -211,7 +211,7 @@ The development of this project was managed through GitHub issues, milestones, a
   - Update/create project files: settings.py, env.py, Procfile
   - Migrate changes
 
-- Sprint 5: Testing, Final revisions to code and documentation - December 25th 2023 to Januaryde 5th, 2024
+- Sprint 5: Testing, Final revisions to code and documentation - December 25th 2023 to January 8th, 2024
 
   - HTML testing, fixing errors and warnings
   - CSS testing
@@ -550,10 +550,6 @@ Modals are used to delete/edit a review.
 
 - **User Guidance**: Offers options to return to the homepage or navigate to other sections of the site.
 
-<details><summary><b>Custom 404 Handler</b></summary>
-
-![404 error](githu)
-</details>
 
 #### 👤 Admin Panel CMS
 

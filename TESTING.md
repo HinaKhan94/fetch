@@ -51,7 +51,7 @@
 | **PRODUCT DETAILS** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
 | **ADD REVIEW** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
 | **EDIT REVIEW** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
-| **BAG** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | Duplicate ID error - resolved | PASS |
+| **BAG** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | Duplicate ID error - unresolved | / |
 | **CHECKOUT** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
 | **CHECKOUT SUCCESS** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
 | **PROFILE** | Page passes validation with no errors | Ran page through https://validator.w3.org/nu/ | No errors | PASS |
@@ -60,6 +60,9 @@
 
 
 - The home page was throwing an error about duplicate IDs, this came down to the 2 versions of the navbar for account and cart, one for large screens one for mobile, which used the same include template, effectively putting 2 versions of the same code on the page. I solved this by changing the ID attribute to a data-id attribute, and adjusting the relevant JavaScript code.
+
+
+
 
 </details>
 
@@ -167,6 +170,6 @@
 
   ### Unsolved Bugs
   
-  - No unsolved bugs
+  - (HTML Validation) The bag page was throwing an error about duplicate IDs, this came down to the 2 versions of the navbar for account and cart, one for large screens one for mobile, which used the same include template, effectively putting 2 versions of the same code on the page. Due to time constraint it was not resolved and was left for future improvements.
 
   * [Back to Contents](#contents)
